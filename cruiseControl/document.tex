@@ -127,22 +127,30 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item A button to select either accelerate or decelerate
 	\item Have the brake to be an alternate method of turning off the system
 	\item If the entire car turns off, then a signal will be sent to turn off the system that is separate from the car shutdown
+	\item RPM (Rotations Per Minute) sensor should be connected to the front axle and able to take readings for accurate speed calculations. 
+	\item RADAR sensor must be able to detect nearby vehicles/obstacles to avoid collision.
+	\item Engine sensor must be able to take input from the engine to tell the cruise control system to turn on or off.
+	\item Brake pedal sensor must be able to take input from user to stop when pressed and keep going when released.
 \end{enumerate}
 
 \subsection{Output}
 \begin{enumerate}
 	\item Keep a log of activity to help debug in the event of a malfunction
-	\item The system displays successful activation or deactivation within a fast time frame
+	\item For every speed increase made by the user in cruise control, a small haptic feedback accompanied by a visual indication by the software is necessary. This is so that the user minimizes their own human error. So, everytime you increase the speed, you can see the cruise control speed on the car menu increasing by however much the user wants it to.
+	\item The system displays successful activation or deactivation within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
 	\item Keep a log of every time cruise control is used and at what speed
-	\item This module must be able to do what the user wants within a fast time frame
-	\item Once the entire system is turned on, cruise control must be readily available
+	\item This module must be able to do what the user wants within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
+	\item Once the entire system is turned on, cruise control must be readily available. The engine sensor must be able to understand that the engine is on and tell the cruise control system that, if the user so wishes, it must activate. 
+	\item With all the inputs it is taking from all the sensors, the software must be able to deliver the desired output for each function in a less than 15 milliseconds. So, the RADAR sensor must be able to tell the software that a car is nearby, and the car must do the appropriate action. The brake pedal sensor must be able to tell the software that the user has stopped, and stop the cruise control. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
 \end{enumerate}
 
 \subsection{Functional}
 \begin{enumerate}
 	\item Able to increase and decrease the speed by 1 mph
 	\item Able to switch cruise control on or off provided the engine is on
+	\item Able to read sensor data and act accordingly.
 	\item Only allow the cruise control to be activated when at a minimum speed of 25 mph
+	\item Maximum speed that cruise control can be activated is around 125 mph. 
 	\item Given a speed by the user, the cruise control software maintains the speed provided
 	\item An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal.
 		\begin{figure}[h]
@@ -154,7 +162,7 @@ system because if it were to fail, it would put the lives of people in danger.
 
 \subsection{Security}
 \begin{enumerate}
-	\item No external interface to reduce potential tampering. There would be no easy access to the cruise control hardware or software so that the likelihood of someone being able to create issues is reduced substantially. 
+	\item No external interface to reduce potential tampering. This applies to both the hardware such as sensors and the general cruise control software. There would be no easy access to the cruise control hardware or software so that the likelihood of someone being able to create issues is reduced substantially. 
 	\item No internet or bluetooth connection. This is so that no bad actors can meddle with the car's system and hence, keeps the drivers safer as cybersecurity becomes more of an issue.
 	\item An admin will need hardware to make changes to the mechanisms. The admin must be authorized to make these changes and they must be a trusted third party or those who created the cruise control themselves. 
 \end{enumerate}
