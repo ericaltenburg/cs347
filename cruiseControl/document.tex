@@ -123,12 +123,12 @@ system because if it were to fail, it would put the lives of people in danger.
 		\begin{enumerate}
 			\item From on to off or vice versa
 		\end{enumerate}
-	\item Button to set speed
+	\item Button to set speed %Are these the same thing
 	\item A button to select either accelerate or decelerate
 	\item Have the brake to be an alternate method of turning off the system
 	\item If the entire car turns off, then a signal will be sent to turn off the system that is separate from the car shutdown
 	\item RPM (Rotations Per Minute) sensor should be connected to the front axle and able to take readings for accurate speed calculations. 
-	\item RADAR sensor must be able to detect nearby vehicles/obstacles to avoid collision.
+	\item RADAR sensor must be able to detect nearby vehicles/obstacles to avoid collision. %Do we really wanna do this
 	\item Engine sensor must be able to take input from the engine to tell the cruise control system to turn on or off.
 	\item Brake pedal sensor must be able to take input from user to stop when pressed and keep going when released.
 \end{enumerate}
@@ -148,8 +148,8 @@ system because if it were to fail, it would put the lives of people in danger.
 \begin{enumerate}
 	\item Able to increase and decrease the speed by 1 mph
 	\item Able to switch cruise control on or off provided the engine is on
-	\item Able to read sensor data and act accordingly.
-	\item Only allow the cruise control to be activated when at a minimum speed of 25 mph
+	\item Able to read sensor data and act accordingly %and do what
+	\item Only allow the cruise control to be activated when at a minimum speed of 25 mph %What if we set speed and and set speed below this
 	\item Maximum speed that cruise control can be activated is around 125 mph. 
 	\item Given a speed by the user, the cruise control software maintains the speed provided
 \end{enumerate}
@@ -163,7 +163,7 @@ system because if it were to fail, it would put the lives of people in danger.
 
 \subsection{UML Diagram}
 \begin{enumerate}
-	\item An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal.
+	\item An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal. %Replace with: General I/O for the cruise control system
 		\begin{figure}[h]
 			\includegraphics[width=0.9\textwidth]{images/ccUML.png}
 			\caption{Sample UML diagram for cruise control activation, velocity set, and deactivation.}
