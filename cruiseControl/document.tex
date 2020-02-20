@@ -24,7 +24,7 @@ Eric Altenburg, Michael McCreesh, Hamzah Nizami, Constance Xu}
 \date{
 	Stevens Institute of Technology\endgraf\bigskip
 	CS 347 — Software Development Process\endgraf\bigskip
-	\textit{I pledge our honor that I have abided by the Stevens Honor System.}}
+	\textit{We pledge our honor that we have abided by the Stevens Honor System.}}
 
 \begin{document}
 
@@ -136,12 +136,12 @@ system because if it were to fail, it would put the lives of people in danger.
 \subsection{Output}
 \begin{enumerate}
 	\item Keep a log of activity to help debug in the event of a malfunction
-	\item For every speed increase made by the user in cruise control, a small haptic feedback accompanied by a visual indication by the software is necessary. This is so that the user minimizes their own human error. So, everytime you increase the speed, you can see the cruise control speed on the car menu increasing by however much the user wants it to.
-	\item The system displays successful activation or deactivation within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
+	\item For every speed increase made by the user in cruise control, a small haptic feedback accompanied by a visual indication by the software is necessary. This is so that the user minimizes their own human error. So, every time you increase the speed, you can see the cruise control speed on the car menu increasing by however much the user wants it to.
+	\item The system displays successful activation or deactivation within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are received from surrounding system, but are expected to be in around that same ballpark.*
 	\item Keep a log of every time cruise control is used and at what speed
-	\item This module must be able to do what the user wants within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
+	\item This module must be able to do what the user wants within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are received from surrounding system, but are expected to be in around that same ballpark.*
 	\item Once the entire system is turned on, cruise control must be readily available. The engine sensor must be able to understand that the engine is on and tell the cruise control system that, if the user so wishes, it must activate. 
-	\item With all the inputs it is taking from all the sensors, the software must be able to deliver the desired output for each function in a less than 15 milliseconds. So, the RADAR sensor must be able to tell the software that a car is nearby, and the car must do the appropriate action. The brake pedal sensor must be able to tell the software that the user has stopped, and stop the cruise control. *Numbers are subject to change depending on how inputs are recieved from surrounding system, but are expected to be in around that same ballpark.*
+	\item With all the inputs it is taking from all the sensors, the software must be able to deliver the desired output for each function in a less than 15 milliseconds. So, the RADAR sensor must be able to tell the software that a car is nearby, and the car must do the appropriate action. The brake pedal sensor must be able to tell the software that the user has stopped, and stop the cruise control. *Numbers are subject to change depending on how inputs are received from surrounding system, but are expected to be in around that same ballpark.*
 \end{enumerate}
 
 \subsection{Functional}
@@ -152,19 +152,23 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item Only allow the cruise control to be activated when at a minimum speed of 25 mph
 	\item Maximum speed that cruise control can be activated is around 125 mph. 
 	\item Given a speed by the user, the cruise control software maintains the speed provided
+\end{enumerate}
+
+\subsection{Security}
+\begin{enumerate}
+	\item No external interface to reduce potential tampering. This applies to both the hardware such as sensors and the general cruise control software. There would be no easy access to the cruise control hardware or software so that the likelihood of someone being able to create issues is reduced substantially. 
+	\item No Internet or Bluetooth connection. This is so that no bad actors can meddle with the car's system and hence, keeps the drivers safer as cyber security becomes more of an issue.
+	\item An administrator will need hardware to make changes to the mechanisms. The administrator must be authorized to make these changes and they must be a trusted third party or those who created the cruise control themselves. 
+\end{enumerate}
+
+\subsection{UML Diagram}
+\begin{enumerate}
 	\item An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal.
 		\begin{figure}[h]
 			\includegraphics[width=0.9\textwidth]{images/ccUML.png}
 			\caption{Sample UML diagram for cruise control activation, velocity set, and deactivation.}
 			\label{fig:ccUML1}
 		\end{figure}
-\end{enumerate}
-
-\subsection{Security}
-\begin{enumerate}
-	\item No external interface to reduce potential tampering. This applies to both the hardware such as sensors and the general cruise control software. There would be no easy access to the cruise control hardware or software so that the likelihood of someone being able to create issues is reduced substantially. 
-	\item No internet or bluetooth connection. This is so that no bad actors can meddle with the car's system and hence, keeps the drivers safer as cybersecurity becomes more of an issue.
-	\item An admin will need hardware to make changes to the mechanisms. The admin must be authorized to make these changes and they must be a trusted third party or those who created the cruise control themselves. 
 \end{enumerate}
 
 
