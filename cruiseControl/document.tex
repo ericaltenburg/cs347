@@ -3,6 +3,7 @@
 \usepackage{tocloft}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\abstractname}{Executive Summary}
@@ -140,6 +141,12 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item Able to switch cruise control on or off provided the engine is on
 	\item Only allow the cruise control to be activated when at a minimum speed of 25 mph
 	\item Given a speed by the user, the cruise control software maintains the speed provided
+	\item An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal.
+		\begin{figure}[h]
+			\includegraphics[width=0.9\textwidth]{images/ccUML.png}
+			\caption{Sample UML diagram for cruise control activation, velocity set, and deactivation.}
+			\label{fig:ccUML1}
+		\end{figure}
 \end{enumerate}
 
 \subsection{Security}
@@ -148,6 +155,8 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item No internet or bluetooth connection
 	\item An admin will need hardware to make changes to the mechanisms
 \end{enumerate}
+
+
 	
 
 
