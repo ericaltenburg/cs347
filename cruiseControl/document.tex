@@ -138,7 +138,7 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item Keep a log of every time the cruise control system is used and at what speed written to the system files.
 	% \item This module must be able to do what the user wants within a fast time frame, less than ten milliseconds. *Numbers are subject to change depending on how inputs are received from surrounding system, but are expected to be in around that same ballpark.*
 	\item Once the cruise control system is turned on, it must be readily available. The engine sensor must be able to understand that the engine is on and tell the cruise control system that, if the user so wishes, it must activate. 
-	\item With all the inputs it is taking from all the sensors, the software must be able to deliver the desired output for each function in a less than 15 milliseconds. 
+	\item With all the inputs it is taking from all the sensors, the software must be able to deliver the desired output for each function in less than 15 milliseconds. 
 		\begin{enumerate}
 			\item The brake pedal sensor must be able to tell the software that the user has stopped, and stop the cruise control system. *Numbers are subject to change depending on how inputs are received from surrounding system, but are expected to be in around that same ballpark.*
 		\end{enumerate}
@@ -155,6 +155,8 @@ system because if it were to fail, it would put the lives of people in danger.
 		\end{enumerate}%What if we set speed and and set speed below this
 	\item Maximum speed that cruise control system can be set to is at 125 mph.
 	\item While the cruise control system is on, if a user is driving at a speed of at least 25 mph and decides to set the speed, the cruise control system will maintain that speed.
+	\item If the user presses and continues to press the brakes, the user will not be able to set the speed.
+	\item If the user presses and continues to press the gas pedal, the user can set the current speed for the cruise control system, but it will immediately pause as stated in the input requirements then resume after the user releases the gas pedal.
 \end{enumerate}
 
 \subsection{Security}
