@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {3.2}UML Class-Based Modeling}{9}{subsection.3.2}% 
 \contentsline {subsection}{\numberline {3.3}UML CRC Model Index Card}{9}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}UML Activity Diagram}{9}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}UML Sequence Diagram}{9}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}UML State Diagram}{10}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.5}UML Sequence Diagram}{10}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}UML State Diagram}{11}{subsection.3.6}% 
