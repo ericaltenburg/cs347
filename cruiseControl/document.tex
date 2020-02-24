@@ -5,16 +5,11 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 
+
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\abstractname}{Executive Summary}
-
-\hypersetup{
-	colorlinks = true,
-	citecolor = black,
-	filecolor = black,
-	linkcolor = black,
-	urlcolor = black,
-}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 
 \title{Cruise Control Software Development Version 0.04}
 
@@ -166,20 +161,63 @@ system because if it were to fail, it would put the lives of people in danger.
 	\item An administrator will need hardware to make changes to the mechanisms. The administrator must be authorized to make these changes and they must be a trusted third party or those who created the cruise control system themselves. 
 \end{enumerate}
 
-\subsection{UML Diagram}
+\section{Requirements Analysis Model}
+
+\subsection{UML Use Cases \& Diagram} 
 \begin{enumerate}
-	\item See Figure ~\ref{fig:ccUML1} for general I/O of cruise control system. %An example can be seen in Figure ~\ref{fig:ccUML1}: The user has requested for the cruise control to power on, in doing so, the system provides feedback through activation of say a light on the dashboard. Then the user can set the velocity where the system will then send a request to the throttle waiting for feedback, once received, it will then request an update from the sensors for the speedometer. The same concept is used when the user would like to increase or decrease the velocity; send a request to the throttle and upon feedback, request information from the sensors for up-to-date information. For powering off, once the user either presses the brake or off button, then it will remove the set throttle request made earlier from a velocity set and then give the user feedback upon successful throttle set removal. %Replace with: General I/O for the cruise control system
-		\begin{figure}[h]
-			\includegraphics[width=0.9\textwidth]{images/ccUML.png}
-			\caption{Sample UML diagram for cruise control activation, velocity set, and deactivation.}
+	\item Use Case 1: User activates cruise control system
+		\begin{enumerate}
+			\item User requests an activation of the cruise control system.
+			\item Cruise control system provides a visual feedback that it is ready for activation.
+			\item Cruise control system activates.
+		\end{enumerate}
+	\item Use Case 2: User sets the speed
+		\begin{enumerate}
+			\item Cruise control system requests values from sensors.
+			\item Sensors provide values for approval to set cruise control system at current speed.
+			\item Cruise control system requests the Engine Management System (EMS) set the speed at current position.
+			\item EMS Speed (Throttle) is set at current speed.
+			\item Cruise control system provides visual feedback to the user that the cruise control is set and working.
+			\item Sensors provide the changing environmental information to the cruise control unit (such as speed, request for increase/decrease speed, and brake).
+			\item Cruise control system detects the changes from the sensors and request adjusting speed or deactivating Cruise Control system accordingly.
+			\item Speed (Throttle) position is continuously set to new values to ensure that the speed remains constant.
+			\item Speed is continuously reported to the cruise control system.
+		\end{enumerate}
+	\item Use Case 3: User adjusts speed
+		\begin{enumerate}
+			\item User requests an adjustment of cruise control system speed.
+			\item Cruise control system provides visual feedback that the system will alter the speed of the vehicle.
+			\item Cruise control system slowly adjusts the speed of the vehicle to match that of the request.
+			\item When the desired speed is reached, the cruise control system will provide visual feedback that the adjustment has been completed.
+		\end{enumerate}
+	\item Use Case 4: User deactivates cruise control system
+		\begin{enumerate}
+			\item User requests a deactivation of the cruise control system.
+			\item Cruise control provides visual feedback that it is ready for deactivation.
+			\item Cruise control system deactivates.
+		\end{enumerate}
+	\item See Figure ~\ref{fig:ccUML1} for general use cases of cruise control system.
+		\begin{figure}[h!]
+			\includegraphics[width=0.9\textwidth]{images/useCaseUML.png}
+			\caption{Sample UML diagram for cruise control system use cases.}
 			\label{fig:ccUML1}
 		\end{figure}
 \end{enumerate}
 
+\subsection{UML Class-Based Modeling}
 
+\subsection{ULM CRC Model Index Card}
 
-	
+\subsection{UML Activity Diagram}
 
+\subsection{UML Sequence Diagram}
+	\begin{figure}[h!]
+			\includegraphics[width=0.9\textwidth]{images/ccUML.png}
+			\caption{Sample UML sequel diagram for cruise control system functionality.}
+			\label{fig:ccUML2}
+	\end{figure}
+
+\subsection{UML State Diagram}
 
 \end{document}
 
