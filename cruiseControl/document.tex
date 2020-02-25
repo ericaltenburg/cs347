@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{subcaption}
 
 
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -12,7 +13,7 @@
 \renewcommand{\labelenumii}{\theenumii}
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 
-\title{Cruise Control Software Development Version 0.04}
+\title{Cruise Control Software Development Version 0.05}
 
 \author{
 Eric Altenburg, Michael McCreesh, Hamzah Nizami, Constance Xu}
@@ -216,6 +217,31 @@ system because if it were to fail, it would put the lives of people in danger.
 \end{enumerate}
 
 \subsection{UML CRC Model Index Card}
+\begin{enumerate}
+	\item See Figure ~\ref{fig:indexUML} for the CRC Model Index Cards for the cruise control system.
+		\begin{figure}[H]
+			\begin{subfigure}{.3\textwidth}
+				\centering
+				\includegraphics[width=.8\linewidth]{images/indexUML1}
+				\caption{1a}
+				\label{fig:sub1}
+			\end{subfigure}
+			\begin{subfigure}{.3\textwidth}
+				\centering
+				\includegraphics[width=.8\linewidth]{images/indexUML2}
+				\caption{1b}
+				\label{fig:sub2}
+			\end{subfigure}
+			\begin{subfigure}{.3\textwidth}
+				\centering
+				\includegraphics[width=.8\linewidth]{images/indexUML3}
+				\caption{1c}
+				\label{fig:sub3}
+			\end{subfigure}
+			\caption{Sample UML CRC model index cards for the cruise control system.}
+			\label{fig:indexUML}
+		\end{figure}
+\end{enumerate}
 
 \subsection{UML Activity Diagram}
 \begin{enumerate}

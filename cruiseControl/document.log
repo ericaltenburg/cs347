@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  24 FEB 2020 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  24 FEB 2020 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,6 +210,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box28
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen109
+\captionmargin@=\dimen110
+\captionwidth=\dimen111
+\caption@tempdima=\dimen112
+\caption@indent=\dimen113
+\caption@parindent=\dimen114
+\caption@hangindent=\dimen115
+)
+\c@caption@flags=\count101
+\c@ContinuedFloat=\count102
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count103
+\c@subtable=\count104
+)
 
 LaTeX Warning: Unused global option(s):
     [preprint,3p].
@@ -217,33 +242,33 @@ LaTeX Warning: Unused global option(s):
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen109
+\scratchcounter=\count105
+\scratchdimen=\dimen116
 \scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\nofMPsegments=\count106
+\nofMParguments=\count107
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen110
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen117
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -263,7 +288,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -271,22 +296,24 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./document.out) (./document.out)
 \@outlinefile=\write3
 \openout3 = `document.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 30.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./docu
@@ -301,92 +328,77 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/useCaseUML.png, id=140, 514.92375pt x 397.485pt>
 File: images/useCaseUML.png Graphic file (type png)
 <use images/useCaseUML.png>
-Package pdftex.def Info: images/useCaseUML.png  used on input line 202.
+Package pdftex.def Info: images/useCaseUML.png  used on input line 203.
 (pdftex.def)             Requested size: 323.9978pt x 250.10754pt.
  [8]
 <images/classUML.png, id=167, 804.00375pt x 1031.855pt>
 File: images/classUML.png Graphic file (type png)
 <use images/classUML.png>
-Package pdftex.def Info: images/classUML.png  used on input line 212.
+Package pdftex.def Info: images/classUML.png  used on input line 213.
 (pdftex.def)             Requested size: 323.9978pt x 415.80493pt.
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.216 \end{enumerate}
-                      <./images/useCaseUML.png>]
-<images/activityUML.jpg, id=176, 487.8225pt x 235.88126pt>
+[9 <./images/useCaseUML.png>]
+<images/indexUML1.png, id=176, 763.85374pt x 720.6925pt>
+File: images/indexUML1.png Graphic file (type png)
+<use images/indexUML1.png>
+Package pdftex.def Info: images/indexUML1.png  used on input line 225.
+(pdftex.def)             Requested size: 86.4012pt x 81.50877pt.
+<images/indexUML2.png, id=177, 318.18875pt x 299.1175pt>
+File: images/indexUML2.png Graphic file (type png)
+<use images/indexUML2.png>
+Package pdftex.def Info: images/indexUML2.png  used on input line 231.
+(pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
+<images/indexUML3.png, id=178, 318.18875pt x 299.1175pt>
+File: images/indexUML3.png Graphic file (type png)
+<use images/indexUML3.png>
+Package pdftex.def Info: images/indexUML3.png  used on input line 237.
+(pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
+ [10 <./images/classUML.png>]
+<images/activityUML.jpg, id=187, 487.8225pt x 235.88126pt>
 File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
-Package pdftex.def Info: images/activityUML.jpg  used on input line 224.
+Package pdftex.def Info: images/activityUML.jpg  used on input line 250.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.228 \end{enumerate}
-                      <./images/classUML.png>]
-<images/ccUML.png, id=185, 477.7047pt x 403.9893pt>
+<images/ccUML.png, id=189, 477.7047pt x 403.9893pt>
 File: images/ccUML.png Graphic file (type png)
 <use images/ccUML.png>
-Package pdftex.def Info: images/ccUML.png  used on input line 234.
+Package pdftex.def Info: images/ccUML.png  used on input line 260.
 (pdftex.def)             Requested size: 323.9978pt x 274.00635pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.238 \end{enumerate}
-                      <./images/activityUML.jpg>]
-<images/stateUML.png, id=193, 773.89125pt x 335.2525pt>
+ [11 <./images/indexUML1.png> <./images/indexUML2.png> <./images/indexUML3.png>
+ <./images/activityUML.jpg>]
+<images/stateUML.png, id=202, 773.89125pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
-Package pdftex.def Info: images/stateUML.png  used on input line 244.
+Package pdftex.def Info: images/stateUML.png  used on input line 270.
 (pdftex.def)             Requested size: 323.9978pt x 140.35492pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.250 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.250 \end{document}
-                     <./images/ccUML.png> <./images/stateUML.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
-
-(./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+ [12 <./images/ccUML.png> <./images/stateUML.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
+ (./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E7A2BE5B2B726FA97273CF8E8E696365;810.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 5481 strings out of 492616
- 81260 string characters out of 6129482
- 173922 words of memory out of 5000000
- 9282 multiletter control sequences out of 15000+600000
+ 6628 strings out of 492616
+ 102140 string characters out of 6129482
+ 196806 words of memory out of 5000000
+ 10415 multiletter control sequences out of 15000+600000
  9466 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,28p,360b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,40p,360b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (12 pages, 313459 bytes).
+Output written on document.pdf (12 pages, 505594 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
