@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  24 FEB 2020 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 FEB 2020 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,49 +324,48 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `document.toc'.
 
- [2] [3] [4] [5] [6] [7]
-<images/useCaseUML.png, id=140, 514.92375pt x 397.485pt>
+ [2] [3] [4] [5] [6]
+<images/useCaseUML.png, id=123, 514.92375pt x 397.485pt>
 File: images/useCaseUML.png Graphic file (type png)
 <use images/useCaseUML.png>
-Package pdftex.def Info: images/useCaseUML.png  used on input line 203.
+Package pdftex.def Info: images/useCaseUML.png  used on input line 171.
 (pdftex.def)             Requested size: 323.9978pt x 250.10754pt.
- [8]
-<images/classUML.png, id=167, 804.00375pt x 1031.855pt>
+ [7] [8 <./images/useCaseUML.png>]
+<images/classUML.png, id=154, 804.00375pt x 1031.855pt>
 File: images/classUML.png Graphic file (type png)
 <use images/classUML.png>
 Package pdftex.def Info: images/classUML.png  used on input line 213.
 (pdftex.def)             Requested size: 323.9978pt x 415.80493pt.
-
-[9 <./images/useCaseUML.png>]
-<images/indexUML1.png, id=176, 763.85374pt x 720.6925pt>
+ [9]
+<images/indexUML1.png, id=175, 763.85374pt x 720.6925pt>
 File: images/indexUML1.png Graphic file (type png)
 <use images/indexUML1.png>
 Package pdftex.def Info: images/indexUML1.png  used on input line 225.
 (pdftex.def)             Requested size: 86.4012pt x 81.50877pt.
-<images/indexUML2.png, id=177, 318.18875pt x 299.1175pt>
+<images/indexUML2.png, id=176, 318.18875pt x 299.1175pt>
 File: images/indexUML2.png Graphic file (type png)
 <use images/indexUML2.png>
 Package pdftex.def Info: images/indexUML2.png  used on input line 231.
 (pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
-<images/indexUML3.png, id=178, 318.18875pt x 299.1175pt>
+<images/indexUML3.png, id=177, 318.18875pt x 299.1175pt>
 File: images/indexUML3.png Graphic file (type png)
 <use images/indexUML3.png>
 Package pdftex.def Info: images/indexUML3.png  used on input line 237.
 (pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
  [10 <./images/classUML.png>]
-<images/activityUML.jpg, id=187, 487.8225pt x 235.88126pt>
+<images/activityUML.jpg, id=186, 487.8225pt x 235.88126pt>
 File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
 Package pdftex.def Info: images/activityUML.jpg  used on input line 250.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
-<images/ccUML.png, id=189, 477.7047pt x 403.9893pt>
+<images/ccUML.png, id=188, 477.7047pt x 403.9893pt>
 File: images/ccUML.png Graphic file (type png)
 <use images/ccUML.png>
 Package pdftex.def Info: images/ccUML.png  used on input line 260.
 (pdftex.def)             Requested size: 323.9978pt x 274.00635pt.
  [11 <./images/indexUML1.png> <./images/indexUML2.png> <./images/indexUML3.png>
  <./images/activityUML.jpg>]
-<images/stateUML.png, id=202, 773.89125pt x 335.2525pt>
+<images/stateUML.png, id=201, 773.89125pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
 Package pdftex.def Info: images/stateUML.png  used on input line 270.
@@ -382,9 +381,9 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 6628 strings out of 492616
- 102140 string characters out of 6129482
- 196806 words of memory out of 5000000
+ 6627 strings out of 492616
+ 102133 string characters out of 6129482
+ 195806 words of memory out of 5000000
  10415 multiletter control sequences out of 15000+600000
  9466 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -395,10 +394,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (12 pages, 505594 bytes).
+Output written on document.pdf (12 pages, 505689 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
