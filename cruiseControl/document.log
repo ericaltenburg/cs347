@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 FEB 2020 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 FEB 2020 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,56 +343,56 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 <images/classUML.png, id=168, 804.00375pt x 1031.855pt>
 File: images/classUML.png Graphic file (type png)
 <use images/classUML.png>
-Package pdftex.def Info: images/classUML.png  used on input line 230.
+Package pdftex.def Info: images/classUML.png  used on input line 240.
 (pdftex.def)             Requested size: 323.9978pt x 415.80493pt.
  [10]
-<images/indexUML1.png, id=182, 763.85374pt x 720.6925pt>
+<images/indexUML1.png, id=190, 763.85374pt x 720.6925pt>
 File: images/indexUML1.png Graphic file (type png)
 <use images/indexUML1.png>
-Package pdftex.def Info: images/indexUML1.png  used on input line 242.
+Package pdftex.def Info: images/indexUML1.png  used on input line 252.
 (pdftex.def)             Requested size: 86.4012pt x 81.50877pt.
-<images/indexUML2.png, id=183, 318.18875pt x 299.1175pt>
+<images/indexUML2.png, id=191, 318.18875pt x 299.1175pt>
 File: images/indexUML2.png Graphic file (type png)
 <use images/indexUML2.png>
-Package pdftex.def Info: images/indexUML2.png  used on input line 248.
+Package pdftex.def Info: images/indexUML2.png  used on input line 258.
 (pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
-<images/indexUML3.png, id=184, 318.18875pt x 299.1175pt>
+<images/indexUML3.png, id=192, 318.18875pt x 299.1175pt>
 File: images/indexUML3.png Graphic file (type png)
 <use images/indexUML3.png>
-Package pdftex.def Info: images/indexUML3.png  used on input line 254.
+Package pdftex.def Info: images/indexUML3.png  used on input line 264.
 (pdftex.def)             Requested size: 86.4012pt x 81.21921pt.
  [11 <./images/classUML.png>]
-<images/activityUML.jpg, id=193, 487.8225pt x 235.88126pt>
+<images/activityUML.jpg, id=201, 487.8225pt x 235.88126pt>
 File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
-Package pdftex.def Info: images/activityUML.jpg  used on input line 267.
+Package pdftex.def Info: images/activityUML.jpg  used on input line 277.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
-<images/ccUML.png, id=195, 477.7047pt x 403.9893pt>
+<images/ccUML.png, id=203, 477.7047pt x 403.9893pt>
 File: images/ccUML.png Graphic file (type png)
 <use images/ccUML.png>
-Package pdftex.def Info: images/ccUML.png  used on input line 277.
+Package pdftex.def Info: images/ccUML.png  used on input line 287.
 (pdftex.def)             Requested size: 323.9978pt x 274.00635pt.
  [12 <./images/indexUML1.png> <./images/indexUML2.png> <./images/indexUML3.png>
  <./images/activityUML.jpg>]
-<images/stateUML.png, id=208, 773.89125pt x 335.2525pt>
+<images/stateUML.png, id=216, 778.91pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
-Package pdftex.def Info: images/stateUML.png  used on input line 287.
-(pdftex.def)             Requested size: 323.9978pt x 140.35492pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
+Package pdftex.def Info: images/stateUML.png  used on input line 297.
+(pdftex.def)             Requested size: 323.9978pt x 139.44946pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
 
 [13 <./images/ccUML.png> <./images/stateUML.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E7A2BE5B2B726FA97273CF8E8E696365;810.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 6647 strings out of 492616
- 102459 string characters out of 6129482
+ 6655 strings out of 492616
+ 102515 string characters out of 6129482
  195806 words of memory out of 5000000
  10429 multiletter control sequences out of 15000+600000
  9466 words of font info for 33 fonts, out of 8000000 for 9000
@@ -405,10 +405,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (13 pages, 514409 bytes).
+Output written on document.pdf (13 pages, 516862 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 99 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -214,7 +214,10 @@ It should be mentioned that there are two similar sounding states that need to b
 	\item Use Case 4: User presses gas pedal while the cruise control system is set
 		\begin{enumerate}
 			\item If the cruise control system is in the set state, the user presses on the gas pedal.
-			\item Cruise control system will temporarily pause, 
+			\item In the event that the vehicle accelerates, the cruise control system will continually request the EMS to be set to the previously specified speed.
+			\item Speed will be continuously reported to the cruise control system.
+			\item After the user releases the gas pedal and the vehicle stops accelerating, the cruise control system will request for the EMS to be set to the previous specified speed.
+			\item The vehicle will naturally decelerate nearing the old set speed, and once reached, the cruise control system will resume with the set speed.
 		\end{enumerate}
 	\item Use Case 5: User deactivates cruise control system
 		\begin{enumerate}
@@ -224,7 +227,9 @@ It should be mentioned that there are two similar sounding states that need to b
 		\end{enumerate}
 	\item Use Case 6: Technician accesses logs of cruise control system
 		\begin{enumerate}
-			\item Only if the vehicle is off 
+			\item With the vehicle turned on and the cruise control activated, an administrator will have to use a proprietary physical hardware key in order to gain root access.
+			\item Once access has been granted, the administrator can download the logs to an external storage device through a USB port.
+			\item Once downloaded, the administrator must log out using the same proprietary physical hardware key.
 		\end{enumerate}
 \end{enumerate}
 
