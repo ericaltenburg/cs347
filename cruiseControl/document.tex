@@ -172,16 +172,29 @@ See Figure ~\ref{fig:ccUML1} for general use cases of cruise control system.
 		\caption{Sample UML diagram for cruise control system use cases.}
 		\label{fig:ccUML1}
 	\end{figure}
+
+It should be mentioned that there are two similar sounding states that need to be clarified:
+\begin{itemize}
+	\item Activated
+		\begin{itemize}
+			\item Granted the vehicle is on, the cruise control system is also now waiting for the speed to be set by the user.
+		\end{itemize}
+	\item Set/Unset
+		\begin{itemize}
+			\item Given that the cruise control system has been \textbf{activated}, the user has requested for the speed to be maintained at its current speed.
+			\item Given that the cruise control system has been \textbf{activated} and the cruise control system is in the \textbf{set} state, the user can either press the brake or press a button to unset the speed and revert back to the \textbf{activated} state.
+		\end{itemize}
+\end{itemize}
 \begin{enumerate}
-	\item Use Case 1: User activates cruise control system
+	\item Use Case 1: User activates the cruise control system
 		\begin{enumerate}
-			\item User requests an activation of the cruise control system.
-			\item Cruise control system provides a visual feedback that it is ready for activation.
+			\item Given that the vehicle is on, the user requests an activation of the cruise control system.
 			\item Cruise control system activates.
+			\item The cruise control system provides a visual feedback that it has been activated.
 		\end{enumerate}
 	\item Use Case 2: User sets the speed
 		\begin{enumerate}
-			\item Cruise control system requests values from sensors.
+			\item Given that the vehicle is on and the cruise control system is in the activated state, the system requests values from sensors.
 			\item Sensors provide values for approval to set cruise control system at current speed.
 			\item Cruise control system requests the Engine Management System (EMS) set the speed at current position.
 			\item EMS Speed (Throttle) is set at current speed.
@@ -193,16 +206,25 @@ See Figure ~\ref{fig:ccUML1} for general use cases of cruise control system.
 		\end{enumerate}
 	\item Use Case 3: User adjusts speed
 		\begin{enumerate}
-			\item User requests an adjustment of cruise control system speed.
+			\item If the cruise control system is in the set state, the user requests an adjustment of cruise control system speed.
 			\item Cruise control system provides visual feedback that the system will alter the speed of the vehicle.
 			\item Cruise control system slowly adjusts the speed of the vehicle to match that of the request.
 			\item When the desired speed is reached, the cruise control system will provide visual feedback that the adjustment has been completed.
 		\end{enumerate}
-	\item Use Case 4: User deactivates cruise control system
+	\item Use Case 4: User presses gas pedal while the cruise control system is set
 		\begin{enumerate}
-			\item User requests a deactivation of the cruise control system.
-			\item Cruise control provides visual feedback that it is ready for deactivation.
+			\item If the cruise control system is in the set state, the user presses on the gas pedal.
+			\item Cruise control system will temporarily pause, 
+		\end{enumerate}
+	\item Use Case 5: User deactivates cruise control system
+		\begin{enumerate}
+			\item If the cruise control system is activated, the user requests a deactivation of the cruise control system.
 			\item Cruise control system deactivates.
+			\item Cruise control system provides visual feedback that it has been deactivated.
+		\end{enumerate}
+	\item Use Case 6: Technician accesses logs of cruise control system
+		\begin{enumerate}
+			\item Only if the vehicle is off 
 		\end{enumerate}
 \end{enumerate}
 
