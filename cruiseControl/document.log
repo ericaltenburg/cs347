@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 FEB 2020 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  28 FEB 2020 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -389,38 +389,69 @@ File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
 Package pdftex.def Info: images/activityUML.jpg  used on input line 285.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
-<images/ccUML.png, id=203, 477.7047pt x 403.9893pt>
-File: images/ccUML.png Graphic file (type png)
-<use images/ccUML.png>
-Package pdftex.def Info: images/ccUML.png  used on input line 295.
-(pdftex.def)             Requested size: 323.9978pt x 274.00635pt.
+<images/activation.png, id=203, 663.47874pt x 169.63374pt>
+File: images/activation.png Graphic file (type png)
+<use images/activation.png>
+Package pdftex.def Info: images/activation.png  used on input line 295.
+(pdftex.def)             Requested size: 323.9978pt x 82.83653pt.
  [12 <./images/brakesensorindex.PNG> <./images/enginesensorindex.PNG> <./images
 /rpmsensorindex.PNG> <./images/systemlogindex.PNG> <./images/visualoutputindex.
 PNG> <./images/activityUML.jpg>]
-<images/stateUML.png, id=220, 778.91pt x 335.2525pt>
+<images/set.png, id=218, 663.47874pt x 390.45876pt>
+File: images/set.png Graphic file (type png)
+<use images/set.png>
+Package pdftex.def Info: images/set.png  used on input line 301.
+(pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
+<images/adjustSequence.png, id=220, 663.47874pt x 390.45876pt>
+File: images/adjustSequence.png Graphic file (type png)
+<use images/adjustSequence.png>
+Package pdftex.def Info: images/adjustSequence.png  used on input line 307.
+(pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
+ [13 <./images/activation.png> <./images/set.png>]
+<images/gasPedalPressedSequence.png, id=235, 663.47874pt x 530.98375pt>
+File: images/gasPedalPressedSequence.png Graphic file (type png)
+<use images/gasPedalPressedSequence.png>
+Package pdftex.def Info: images/gasPedalPressedSequence.png  used on input line
+ 313.
+(pdftex.def)             Requested size: 323.9978pt x 259.29306pt.
+ [14 <./images/adjustSequence.png>]
+<images/deactivation.png, id=244, 663.47874pt x 290.08376pt>
+File: images/deactivation.png Graphic file (type png)
+<use images/deactivation.png>
+Package pdftex.def Info: images/deactivation.png  used on input line 319.
+(pdftex.def)             Requested size: 323.9978pt x 141.65538pt.
+<images/sequenceAdmin.png, id=246, 382.42876pt x 490.83376pt>
+File: images/sequenceAdmin.png Graphic file (type png)
+<use images/sequenceAdmin.png>
+Package pdftex.def Info: images/sequenceAdmin.png  used on input line 325.
+(pdftex.def)             Requested size: 323.9978pt x 415.86255pt.
+ [15 <./images/gasPedalPressedSequence.png> <./images/deactivation.png>]
+<images/stateUML.png, id=256, 778.91pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
-Package pdftex.def Info: images/stateUML.png  used on input line 305.
+Package pdftex.def Info: images/stateUML.png  used on input line 335.
 (pdftex.def)             Requested size: 323.9978pt x 139.44946pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
- [13 <./images/ccUML.png> <./images/stateUML.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
- (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+ [16 <./images/sequenceAdmin.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+ [17 <./images/stateUML.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+
+(./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E7A2BE5B2B726FA97273CF8E8E696365;810.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 6665 strings out of 492616
- 102904 string characters out of 6129482
- 197055 words of memory out of 5000000
- 10436 multiletter control sequences out of 15000+600000
+ 6708 strings out of 492616
+ 103804 string characters out of 6129482
+ 197591 words of memory out of 5000000
+ 10461 multiletter control sequences out of 15000+600000
  9466 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,9n,40p,360b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -431,10 +462,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (13 pages, 522153 bytes).
+Output written on document.pdf (17 pages, 586180 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 99 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

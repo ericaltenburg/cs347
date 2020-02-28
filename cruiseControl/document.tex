@@ -13,7 +13,7 @@
 \renewcommand{\labelenumii}{\theenumii}
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 
-\title{Cruise Control Software Development Version 0.05}
+\title{Cruise Control Software Development Version 0.06}
 
 \author{
 Eric Altenburg, Michael McCreesh, Hamzah Nizami, Constance Xu}
@@ -290,18 +290,48 @@ It should be mentioned that there are two similar sounding states that need to b
 
 \subsection{UML Sequence Diagram}
 \begin{enumerate}
-	\item 	See Figure ~\ref{fig:ccUML2} for sequence diagram of cruise control system.
-			\begin{figure}[H]
-				\includegraphics[width=0.9\textwidth]{images/ccUML.png}
-				\caption{Sample UML sequel diagram for cruise control system functionality.}
-				\label{fig:ccUML2}
-			\end{figure}
+	\item See Figure ~\ref{fig:ccActivation} for sequence diagram of the activation of the cruise control system.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/activation.png}
+			\caption{Sequence UML digram for activation of the cruise control system.}
+			\label{fig:ccActivation}
+		\end{figure}
+	\item See Figure ~\ref{fig:ccSet} for sequence diagram of cruise control system setting speed.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/set.png}
+			\caption{Sequence UML diagram for the cruise control system setting speed.}
+			\label{fig:ccSet}
+		\end{figure}
+	\item See Figure ~\ref{fig:ccAdjust} for sequence diagram of cruise control system adjusting speed.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/adjustSequence.png}
+			\caption{Sequence UML diagram for the cruise control system adjusting speed.}
+			\label{fig:ccAdjust}
+		\end{figure}
+	\item See Figure ~\ref{fig:ccGas} for sequence diagram of the cruise control system being suspended when the user presses the gas pedal.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/gasPedalPressedSequence.png}
+			\caption{Sequence UML diagram for the cruise control system suspending during gas pedal being pressed.}
+			\label{fig:ccGas}
+		\end{figure}
+	\item See Figure ~\ref{fig:ccDeactivate} for sequence diagram of the cruise control system being deactivated.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/deactivation.png}
+			\caption{Sequence UML diagram for the cruise control system being deactivated.}
+			\label{fig:ccDeactivate}
+		\end{figure}
+	\item See Figure ~\ref{fig:ccAdmin} for sequence diagram of the administrator accessing the cruise control system logs.
+		\begin{figure}[H]
+			\includegraphics[width=0.9\textwidth]{images/sequenceAdmin.png}
+			\caption{Sequence UML diagram for the administrator accessing cruise control system logs.}
+			\label{fig:ccAdmin}
+		\end{figure}
 \end{enumerate}
 
 \subsection{UML State Diagram}
 \begin{enumerate}
 	\item See Figure ~\ref{fig:stateUML} for the state diagram of the cruise control system.
-			\begin{figure}[H]
+			\begin{figure}[H]{}
 				\includegraphics[width=0.9\textwidth]{images/stateUML.png}
 				\caption{Sample UML state diagram for the cruise control system.}
 				\label{fig:stateUML}
