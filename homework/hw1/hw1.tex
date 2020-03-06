@@ -140,7 +140,7 @@ showstringspaces=false}
 		\item If the pin is rejected, then the user can re-input their pin up to 3 times.
 		\item If the pin is accepted, then the user is presented with a menu where they can perform a withdrawal, deposit, transfer funds between accounts, etc. (the options depend on the machine).
 		\item User selects withdrawal.
-		\item user selects or specifies a valid amount of funds to withdraw from their account.
+		\item User selects or specifies a valid amount of funds to withdraw from their account. If the amount is invalid, a message is displayed to inform the user.
 		\item After receiving their funds, the user must remove their card from the card reader, take the dispensed funds, and either select if they want a receipt or not.
 		\item The ATM logs out of the user's bank account when the card is ejected.
 	\end{enumerate}
@@ -150,10 +150,10 @@ showstringspaces=false}
 
 	While doing the aforementioned might lead to problems down the road, there is a benefit to doing so. By beginning the development process early on, the skeleton of the code can be created allowing for a faster prototype coming about under circumstances where there might not be much structure needed or when there are few requirements. If errors arise in the code based on structure, interfaces, and design, and if the prototype is developed correctly and in a modular manner, then the fixing/patching process will be much smoother. 
 
-
+\newpage
 \question{8.10}{How does a sequence diagram differ from a state diagram? How are they similar?}
 	\part{Difference}
-		In terms of how the system behaves, the sequence diagram will give a detailed description of how the classes will move from state to state, whereas the state diagram will not have any information about classes. Also, the state diagram will explain how a singular class will change states based on external factors, however, the sequence diagram will show the behavior of the software with respect to time.
+		In terms of how the system behaves, the sequence diagram will give a detailed description of how the classes will move from behavioral state to the next, whereas the state diagram will not have any information about classes. Also, the state diagram will explain how a singular class will change states based on external factors, however, the sequence diagram will show the behavior of the software with respect to time.
 	
 	\part{Similarity}
 		They are both used to model the behavior of the software, just done so in different manners.
