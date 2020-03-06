@@ -97,7 +97,9 @@ showstringspaces=false}
 
 \newpage
 \question{2.9}{What are the advantages and disadvantages to developing software in which quality is "good enough"? That is, what happens when we emphasize development speed over product quality.}
-	\part{Advantages}
+	When considering the disadvantages of developing software whose quality is considered to be "good enough," it should be mentioned that software is heavily reliant on other software to function. When new software is developed, it could be absolutely perfect, however, if it is reliant on other functions or programs, then this "perfect" piece of software could become faulty. Therefore, the foundation must be very strong; no weak links. If an individual develops software that is "good enough" and it is largely independent, then using discretion for this "good enough" measurement is okay, but as mentioned above, if other programs rely on it, then precautions should be taken. In summary, what might be considered to be "good enough" at the time will slowly turn into "not good enough" resulting in lost time, money, and other human resources such as motivation or productivity trying to fix the old code.
+
+	With that begin said, there are a few scenarios where developing software that is "good enough" is acceptable and even advantageous. When discussing the topic of research, a final product is not necessary and usually a working concept is only required, therefore, no additional software will be developed that will rely on the "good enough" software. The same applies to start-ups and other experimental products as most of the time, one is trying to show that a specific problem can be solved with the use of software.
 
 
 \question{3.2}{Describe agility (for software projects) in your own words.}
@@ -125,12 +127,28 @@ showstringspaces=false}
 
 
 \question{7.1}{Why is it that many software developers don't pay enough attention to requirements engineering? Are there ever circumstances where you can skip it?}
+	One of the most difficult tasks a software developer will encounter is understanding the requirements as often times there is a severe separation between the customer's requirements and the actual construction of the product. Therefore, for this reason, most software developers will end up ignoring the requirements engineering and instead, will take an abbreviated approach. Though in reality, every task must be given a dedicated amount of time to make sure the requirements engineering is performed thoroughly; requirements engineering serves as the bridge between the customer's requirements and the product design.
 
+	Also, requirements generally do not stay consistent throughout the life of the software development process, therefore, since they change so often, developers end up ignoring them and build a generic prototype that allow for easy changes to be made per the new requirements. This especially pertains to a project in which there are a large amount of requirements, the developers will most likely ignore them due to the changes that will most likely ensue as mentioned above. However, if the software to be developed is for something where there are only a few requirements, then the developers will take their time and thoroughly delve into requirements engineering.
 
 \question{7.5a}{Develop a complete use case for making a withdrawal from an ATM.}
-
+	Use Case: User withdraws from an ATM
+	\begin{enumerate}
+		\item The ATM is on and in a state where it is ready to perform a withdrawal.
+		\item The user inserts their debit card through the card reader.
+		\item User uses the key pad to input their secure pin.
+		\item If the pin is rejected, then the user can re-input their pin up to 3 times.
+		\item If the pin is accepted, then the user is presented with a menu where they can perform a withdrawal, deposit, transfer funds between accounts, etc. (the options depend on the machine).
+		\item User selects withdrawal.
+		\item user selects or specifies a valid amount of funds to withdraw from their account.
+		\item After receiving their funds, the user must remove their card from the card reader, take the dispensed funds, and either select if they want a receipt or not.
+		\item The ATM logs out of the user's bank account when the card is ejected.
+	\end{enumerate}
 
 \question{8.1}{Is it possible to begin coding immediately after a requirements model has been created? Explain your answer, and then argue the counterpoint.}
+	If a software developer were to immediately begin coding after a requirements model has been created, then they miss out on creating a coherent analysis model which serves as the backbone to the overall project. By not creating an analysis model, the design and interfaces will not be fully thought through. While yes, it is possible to begin coding immediately after a requirements model has been created, later on, problems might arise as the architectural design, interfaces, and the global data structure will not be fully implemented.
+
+	While doing the aforementioned might lead to problems down the road, there is a benefit to doing so. By beginning the development process early on, the skeleton of the code can be created allowing for a faster prototype coming about under circumstances where there might not be much structure needed or when there are few requirements. If errors arise in the code based on structure, interfaces, and design, and if the prototype is developed correctly and in a modular manner, then the fixing/patching process will be much smoother. 
 
 
 \question{8.10}{How does a sequence diagram differ from a state diagram? How are they similar?}
