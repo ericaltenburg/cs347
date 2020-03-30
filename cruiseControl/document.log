@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  30 MAR 2020 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  30 MAR 2020 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,7 +770,10 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 22.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 23.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -795,20 +798,20 @@ LaTeX Warning: Label `sub@fig:sub3' multiply defined.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -840,7 +843,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -850,9 +853,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 
 (./document.out) (./document.out)
 \@outlinefile=\write4
@@ -861,12 +864,12 @@ LaTeX Info: Redefining \nameref on input line 84.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-Overfull \hbox (27.18243pt too wide) in paragraph at lines 87--88
+Overfull \hbox (27.18243pt too wide) in paragraph at lines 88--89
 \T1/ppl/b/it/36.135 Cruise Con-trol Soft-ware
  []
 
 
-Overfull \hbox (49.54996pt too wide) in paragraph at lines 87--88
+Overfull \hbox (49.54996pt too wide) in paragraph at lines 88--89
 \T1/ppl/b/it/36.135 De-vel-op-ment Ver-sion 0.07 
  []
 
@@ -881,129 +884,122 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \newpage
-               [1] [2] [3] [4] [5]
-<images/ccUseCaseUML.png, id=127, 533.995pt x 505.89pt>
+l.114 \newpage
+               [1] [2] [3] [4] [5] [6]
+<images/ccUseCaseUML.png, id=139, 533.995pt x 505.89pt>
 File: images/ccUseCaseUML.png Graphic file (type png)
 <use images/ccUseCaseUML.png>
-Package pdftex.def Info: images/ccUseCaseUML.png  used on input line 251.
+Package pdftex.def Info: images/ccUseCaseUML.png  used on input line 258.
 (pdftex.def)             Requested size: 323.9978pt x 306.95596pt.
- [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 258.
+ [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 265.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
- [7 <./images/ccUseCaseUML.png>] [8]
-<images/classUML.png, id=170, 804.00375pt x 1031.855pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 265.
+ [8 <./images/ccUseCaseUML.png>] [9] [10]
+<images/classUML.png, id=204, 804.00375pt x 1031.855pt>
 File: images/classUML.png Graphic file (type png)
 <use images/classUML.png>
-Package pdftex.def Info: images/classUML.png  used on input line 320.
+Package pdftex.def Info: images/classUML.png  used on input line 327.
 (pdftex.def)             Requested size: 323.9978pt x 415.80493pt.
- [9]
-<images/brakesensorindex.PNG, id=192, 182.93344pt x 164.48953pt>
+<images/brakesensorindex.PNG, id=206, 182.93344pt x 164.48953pt>
 File: images/brakesensorindex.PNG Graphic file (type png)
 <use images/brakesensorindex.PNG>
-Package pdftex.def Info: images/brakesensorindex.PNG  used on input line 332.
+Package pdftex.def Info: images/brakesensorindex.PNG  used on input line 339.
 (pdftex.def)             Requested size: 86.4012pt x 77.68907pt.
-<images/enginesensorindex.PNG, id=193, 185.94469pt x 166.37157pt>
+<images/enginesensorindex.PNG, id=207, 185.94469pt x 166.37157pt>
 File: images/enginesensorindex.PNG Graphic file (type png)
 <use images/enginesensorindex.PNG>
-Package pdftex.def Info: images/enginesensorindex.PNG  used on input line 337.
+Package pdftex.def Info: images/enginesensorindex.PNG  used on input line 344.
 (pdftex.def)             Requested size: 86.4012pt x 77.30865pt.
-<images/rpmsensorindex.PNG, id=194, 185.94469pt x 167.87718pt>
+<images/rpmsensorindex.PNG, id=208, 185.94469pt x 167.87718pt>
 File: images/rpmsensorindex.PNG Graphic file (type png)
 <use images/rpmsensorindex.PNG>
-Package pdftex.def Info: images/rpmsensorindex.PNG  used on input line 342.
+Package pdftex.def Info: images/rpmsensorindex.PNG  used on input line 349.
 (pdftex.def)             Requested size: 86.4012pt x 78.00829pt.
-<images/systemlogindex.PNG, id=195, 184.81548pt x 165.99516pt>
+<images/systemlogindex.PNG, id=209, 184.81548pt x 165.99516pt>
 File: images/systemlogindex.PNG Graphic file (type png)
 <use images/systemlogindex.PNG>
-Package pdftex.def Info: images/systemlogindex.PNG  used on input line 348.
+Package pdftex.def Info: images/systemlogindex.PNG  used on input line 355.
 (pdftex.def)             Requested size: 86.4012pt x 77.60234pt.
-<images/visualoutputindex.PNG, id=196, 186.6975pt x 169.75922pt>
+<images/visualoutputindex.PNG, id=210, 186.6975pt x 169.75922pt>
 File: images/visualoutputindex.PNG Graphic file (type png)
 <use images/visualoutputindex.PNG>
-Package pdftex.def Info: images/visualoutputindex.PNG  used on input line 353.
+Package pdftex.def Info: images/visualoutputindex.PNG  used on input line 360.
 (pdftex.def)             Requested size: 86.4012pt x 78.56161pt.
- [10 <./images/classUML.png>]
-<images/activityUML.jpg, id=205, 487.8225pt x 235.88126pt>
+ [11 <./images/classUML.png>]
+<images/activityUML.jpg, id=220, 487.8225pt x 235.88126pt>
 File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
-Package pdftex.def Info: images/activityUML.jpg  used on input line 365.
+Package pdftex.def Info: images/activityUML.jpg  used on input line 372.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
-<images/activation.png, id=207, 663.47874pt x 169.63374pt>
+<images/activation.png, id=222, 663.47874pt x 169.63374pt>
 File: images/activation.png Graphic file (type png)
 <use images/activation.png>
-Package pdftex.def Info: images/activation.png  used on input line 375.
+Package pdftex.def Info: images/activation.png  used on input line 382.
 (pdftex.def)             Requested size: 323.9978pt x 82.83653pt.
- [11 <./images/brakesensorindex.PNG> <./images/enginesensorindex.PNG> <./images
+ [12 <./images/brakesensorindex.PNG> <./images/enginesensorindex.PNG> <./images
 /rpmsensorindex.PNG> <./images/systemlogindex.PNG> <./images/visualoutputindex.
 PNG> <./images/activityUML.jpg>]
-<images/set.png, id=222, 663.47874pt x 390.45876pt>
+<images/set.png, id=238, 663.47874pt x 390.45876pt>
 File: images/set.png Graphic file (type png)
 <use images/set.png>
-Package pdftex.def Info: images/set.png  used on input line 381.
+Package pdftex.def Info: images/set.png  used on input line 388.
 (pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
-<images/adjustSequence.png, id=224, 663.47874pt x 390.45876pt>
+<images/adjustSequence.png, id=240, 663.47874pt x 390.45876pt>
 File: images/adjustSequence.png Graphic file (type png)
 <use images/adjustSequence.png>
-Package pdftex.def Info: images/adjustSequence.png  used on input line 387.
+Package pdftex.def Info: images/adjustSequence.png  used on input line 394.
 (pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
- [12 <./images/activation.png> <./images/set.png>]
-<images/gasPedalPressedSequence.png, id=239, 663.47874pt x 530.98375pt>
+ [13 <./images/activation.png> <./images/set.png>]
+<images/gasPedalPressedSequence.png, id=254, 663.47874pt x 530.98375pt>
 File: images/gasPedalPressedSequence.png Graphic file (type png)
 <use images/gasPedalPressedSequence.png>
 Package pdftex.def Info: images/gasPedalPressedSequence.png  used on input line
- 393.
+ 400.
 (pdftex.def)             Requested size: 323.9978pt x 259.29306pt.
- [13 <./images/adjustSequence.png>]
-<images/deactivation.png, id=248, 663.47874pt x 290.08376pt>
+ [14 <./images/adjustSequence.png>]
+<images/deactivation.png, id=263, 663.47874pt x 290.08376pt>
 File: images/deactivation.png Graphic file (type png)
 <use images/deactivation.png>
-Package pdftex.def Info: images/deactivation.png  used on input line 399.
+Package pdftex.def Info: images/deactivation.png  used on input line 406.
 (pdftex.def)             Requested size: 323.9978pt x 141.65538pt.
-<images/sequenceAdmin.png, id=250, 382.42876pt x 490.83376pt>
+<images/sequenceAdmin.png, id=265, 382.42876pt x 490.83376pt>
 File: images/sequenceAdmin.png Graphic file (type png)
 <use images/sequenceAdmin.png>
-Package pdftex.def Info: images/sequenceAdmin.png  used on input line 405.
+Package pdftex.def Info: images/sequenceAdmin.png  used on input line 412.
 (pdftex.def)             Requested size: 323.9978pt x 415.86255pt.
- [14 <./images/gasPedalPressedSequence.png> <./images/deactivation.png>]
-<images/stateUML.png, id=260, 778.91pt x 335.2525pt>
+ [15 <./images/gasPedalPressedSequence.png> <./images/deactivation.png>]
+<images/stateUML.png, id=275, 778.91pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
-Package pdftex.def Info: images/stateUML.png  used on input line 415.
+Package pdftex.def Info: images/stateUML.png  used on input line 422.
 (pdftex.def)             Requested size: 323.9978pt x 139.44946pt.
- [15 <./images/sequenceAdmin.png>] [16 <./images/stateUML.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+ [16 <./images/sequenceAdmin.png>] [17 <./images/stateUML.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 
 (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: D887069350A7D39B79B48C357BA9525B;863.
 
-
-Package rerunfilecheck Warning: File `document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `document.out':
-(rerunfilecheck)             Before: C7F0B01EABC0D904581A3C7257E9638C;861
-(rerunfilecheck)             After:  E7A2BE5B2B726FA97273CF8E8E696365;810.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
- 27262 strings out of 492616
- 523790 string characters out of 6129482
+ 27276 strings out of 492616
+ 524086 string characters out of 6129482
  722121 words of memory out of 5000000
- 30747 multiletter control sequences out of 15000+600000
- 539989 words of font info for 47 fonts, out of 8000000 for 9000
+ 30749 multiletter control sequences out of 15000+600000
+ 539681 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,63p,410b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1016,10 +1012,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 19/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb>
-Output written on document.pdf (17 pages, 600377 bytes).
+Output written on document.pdf (18 pages, 602212 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 112 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

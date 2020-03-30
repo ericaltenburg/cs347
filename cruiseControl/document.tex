@@ -10,6 +10,7 @@
 \usepackage{tikz} 
 \usepackage{epigraph}
 \usepackage{lipsum} 
+\usepackage{indentfirst}
 
 
 \renewcommand\epigraphflush{flushright}
@@ -112,8 +113,8 @@
 \tableofcontents
 \newpage
 
-\begin{abstract}
-	Team Mike is a startup initiative aimed at solving problems that come to light as
+\section{Executive Summary}
+Team Mike is a startup initiative aimed at solving problems that come to light as
 society begins to adopt new technologies. One of which pertains to autonomous
 driving and “smart cars” as they are beginning to break into the automobile
 market more and more every year with examples such as Tesla and Ford. In a
@@ -124,7 +125,7 @@ rotational leadership on a monthly basis, each team member possesses a set of
 distinct skills that can translate to highly efficient work sessions. Aside from
 developing a traditional cruise control, the aim is to make the software open source as it will serve as the foundation to a more interconnected logistical future in which autonomous cars can fully achieve
 their potential within a growing technologically advanced society. 
-\end{abstract}
+\newpage
 
 \section {Introduction}
 The past century has seen an explosion of innovation on a scale never before seen
@@ -190,6 +191,7 @@ system because if it were to fail, it would put the lives of people in danger.
 
 \subsection{Input}
 \begin{enumerate}
+	\item The system shall accept electric power from the alternator.
 	\item The power button that allows for the state of the system to change from on to off or vice versa.
 	\item When pressed, a button will either accelerate or decelerate in 1 mph increments. 
 	\item When the brake is pressed, the cruise control system will unset the speed and give control back to the user until the user specifies a new speed to be set.
@@ -223,13 +225,18 @@ system because if it were to fail, it would put the lives of people in danger.
 
 \subsection{Functional}
 \begin{enumerate}
+	\item The system shall accept direct current from the car battery to support logging after engine shut down.
+	\item The system shall receive the time and date from the car's clock every second.
+	\item A physical will be provided by the system for technicians to access the unit.
+	\item Hardware shall have a 4 nine (99.99\%) availability.
+	\item Software shall have a 5 nine (99.999\%) availability.
 	\item While the cruise control system is on and a speed is set, it must be able to increase and decrease the speed by 1 mph.
 	\item Able to switch the cruise control system on or off provided the engine is on.
 	\item Interpret engine on and off signal to allow for the cruise control system to be turned on within 3 seconds of received the signal.
 	\item Only allow the cruise control system to be activated when at a minimum speed of 25 mph. 
 		\begin{enumerate}
 			\item If the speed is set to 25 mph, the user cannot decrease the speed below 25 mph.
-		\end{enumerate}%What if we set speed and and set speed below this
+		\end{enumerate} %What if we set speed and and set speed below this
 	\item Maximum speed that cruise control system can be set to is at 125 mph.
 	\item While the cruise control system is on, if a user is driving at a speed of at least 25 mph and decides to set the speed, the cruise control system will maintain that speed.
 	\item If the user presses and continues to press the brakes, the user will not be able to set the speed.
