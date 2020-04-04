@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {4.6}UML State Diagram}{16}{subsection.4.6}% 
 \contentsline {section}{\numberline {5}Software Architecture}{17}{section.5}% 
 \contentsline {subsection}{\numberline {5.1}Architecture Style}{17}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Components}{17}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}Control Management}{17}{subsection.5.3}% 
-\contentsline {subsection}{\numberline {5.4}Data Architecture}{17}{subsection.5.4}% 
-\contentsline {subsection}{\numberline {5.5}Architectural Designs}{18}{subsection.5.5}% 
-\contentsline {subsection}{\numberline {5.6}Issues}{18}{subsection.5.6}% 
+\contentsline {subsection}{\numberline {5.2}Components}{18}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Control Management}{19}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}Data Architecture}{20}{subsection.5.4}% 
+\contentsline {subsection}{\numberline {5.5}Architectural Designs}{21}{subsection.5.5}% 
+\contentsline {subsection}{\numberline {5.6}Issues}{21}{subsection.5.6}% 
