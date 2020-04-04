@@ -428,8 +428,51 @@ It should be mentioned that there are two similar sounding states that need to b
 \section{Software Architecture}
 
 \subsection{Architecture Style} 
+We will be implementing a combination of the object oriented architecture and the call and return architecture.
+\begin{enumerate} 
+	\item Call and Return 
+	\begin{enumerate} 
+		\item Pros: Easy to modify and scale. Grow system functionality by adding more modules. Simple to analyze and control flow.
+		\item Cons: Parallel processing may be difficult. Difficult to distribute across machines. Exceptions to normal operations are awkward to handle.
+		\item This makes sense with this project due to the many actions that can be performed by the cruise control system, for example acceleration, deceleration, and maintaining speed.
+		\item Different user actions should invoke different responses from the cruise control system. These responses are the result of activating different programs.
+		\item Specifically the type of call and return architecture we will be using is the main program/subprogram architecture.
+	\end{enumerate}
+	\item Object-oriented
+	\begin{enumerate} 
+		\item The components of a system encapsulate data and the operations that must be applied to manipulate the data. Communication and coordination between components are accomplished via message passing. 
+		\item Pros: It models the real world very well. With OOP, programs are easy to understand and maintain. OOP offers code reusability. Already created classes can be reused without having to write them again.OOP facilitates the quick development of programs where parallel development of classes is possible.With OOP, programs are easier to test, manage and debug.
+		\item Cons: With OOP, classes sometimes tend to be over-generalized. The relations among classes become superficial at times. The OOP design is tricky and requires appropriate knowledge. Also, one needs to do proper planning and design for OOP programming. To program with OOP, the programmer needs proper skills such as that of design, programming and thinking in terms of objects and classes etc.
+	\end{enumerate} 
+\end{enumerate}
 \subsection{Components} 
+A software component is an architectural entity that encapsulates a subset of the system’s functionality and/or data. A set of components will perform a function that is required by a system. This restricts access to that subset via an explicitly defined interface. The components of a software system are the following (but not limited to):
+\begin{enumerate} 
+	\item Network and internet services
+	\item Hardware level of operating system
+	\item Logical level of operating system
+	\item Graphics engine
+	\item User interface
+	\item System services
+	\item Command shell
+	\item System utilities 
+\end{enumerate} 
+A software connector is an architectural entity affecting and regulating the interactions. This is what interacts among other components and has the rules that govern those interactions. These interactions can be simple interactions such as procedure calls and shared variable access.  Some complex interactions are client-server protocols, database access protocols, and asynchronous event multicast. Each of these connectors provides interaction ducts and transfer of control and/or data. Connectors in software system implementations usually have no dedicated code and no identity. They typically do not correspond to compilation units and have a distributed implementation across multiple modules and across interaction mechanisms. \par
+
+Components and connectors are used to accomplish a system’s goal. This is expressed through an architectural configuration. More precisely, an architectural configuration is an association between components and connectors of software architecture. A connector is not equivalent to a component as components provide application-specific functionality while connectors provide application-independent interaction mechanisms. \par
+
+A software constraint defines how components can be integrated to form the system. A software constraint is a restriction on the degree of freedom you have in providing a solution. Constraints are effectively global requirements, such as limited development resources or a decision by senior management that restricts the way you develop a system. Constraints can be economic, political, technical, or environmental and pertain to your project resources, schedule, target environment, or to the system itself. Some constraints are the following:
+
+\begin{enumerate} 
+	\item The system will work on our existing technical infrastructure in which no new technologies will be introduced.
+	\item The system will only use the data contained in the existing corporate databse.
+	\item A programming language can also be a constrain because oftentimes, a specific programming language will be required for various reasons. 
+\end{enumerate}
+
 \subsection{Control Management} 
+Call-and-return uses a looping structure to control environment variables. It uses a pipe -filter system which creates an incremental transformation of streams. Pipe-filter can be used to structure systems that produce and process a stream of data. Each processing step is enclosed within a filter component and data to be processed is passed through pipes. These pipes can be used for buffering or for synchronization purposes. \par
+Call-and-return is split so that there is a main program that is divided into smaller pieces hierarchically. The main program invokes many program components in the hierarchy that program components are divided into subprograms. Hence, the main program is the driver of a call-and-return architecture. The main program or subprogram components are distributed within a network of multiple computers. The main aim is for an increase in performance. Call-and-return is used in object-oriented architectures which consists of bundling data and methods. For our purposes, the call-and-return main function would control incrementing the speed of a car or decrementing it and is responsible for the activation of cruise control. Call-and-return incurs a finite communication time between subroutine call and response. It strives to increase performance by distributing the computations and taking advantage of multiple processors. 
+
 \subsection{Data Architecture} 
 In terms of data architecture, the plan is to adopt a scalable, object-oriented, NoSQL database like MongoDB. Considering that the project is going to be programmed in an object oriented language such as Java or C++, having the data schema represented in the same programming paradigm streamlines the technical thought process behind the project. Furthermore, MongoDB is known for its high availability and performance. Having a data schema known for reliability is imperative for a mission critical piece of software like cruise control.\par
 Due to the use of Java/C++ and MongoDB, the general paradigm of the data architecture is object-oriented. We will also be using a call and return architecture in conjunction, which will be discussed later on in the document.  An object-oriented data architecture means that the components of a system encapsulate data and the operations that must be applied to manipulate the data. Communication between the components is done via message passing. Due to the object-oriented nature of the system, that means that the data between components is communicated via synchronous message-passing. Message passing is a critical since it relies on all the components to be active in order to pass information. This makes it easier to identify when the system is down. This also means that data objects are passed around the system based on need. \par
@@ -480,6 +523,12 @@ As we can see, the control of the program sets up the relationship between itsel
 \end{enumerate}
 
 \subsection{Issues}
+\begin{enumerate} 
+	\item Hamzah: The data architecture has not been thoroughly defined. Work through the data architecture and define how exactly the cruise control software will store the data using MongoDB in an object-oriented + call and return architecture. 
+	\item Connie: work with Hamzah to identify how control interacts with the Data Architecture and the drawbacks of Object-Oriented design and call and return architectures.
+	\item Eric: Make security contingencies in case of data leak/ security issues.
+	\item Mike: Consider any architectural alternatives to the current design to ensure that the best implementation is chosen.
+\end{enumerate}
 
 \end{document}
 
