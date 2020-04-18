@@ -11,6 +11,7 @@
 \usepackage{epigraph}
 \usepackage{lipsum} 
 \usepackage{indentfirst}
+\usepackage[strings]{underscore}
 
 
 \renewcommand\epigraphflush{flushright}
@@ -86,7 +87,7 @@
 \begin{titlepage}
 
 \noindent
-\titlefont Cruise Control Software Development Version 0.08\par
+\titlefont Cruise Control Software Development Version 0.09\par
 \epigraph{We pledge our honor that we have abided by the Stevens Honor System.}%
 {\textit{CS347: Software Development Processes |  Spring 2020}\\ \textsc{Team Mike}}
 \null\vfill
@@ -272,14 +273,23 @@ It should be mentioned that there are two similar sounding states that need to b
 			\item Given that the cruise control system has been \textbf{activated} and the cruise control system is in the \textbf{set} state, the user can either press the brake or press a button to unset the speed and revert back to the \textbf{activated} state.
 		\end{itemize}
 \end{itemize}
+
 \begin{enumerate}
-	\item Use Case 1: User activates the cruise control system
+	\item 	Use Case 1:\par
+			Primary Actor: User\par
+			Description: User activates the cruise control system\par
+			Outcome: The cruise control system is now activated\par
+			Basic Flow:
 		\begin{enumerate}
 			\item Given that the vehicle is on, the user requests an activation of the cruise control system.
 			\item Cruise control system activates.
 			\item The cruise control system provides a visual feedback that it has been activated.
 		\end{enumerate}
-	\item Use Case 2: User sets the speed
+	\item 	Use Case 2: \par
+			Primary Actor: User \par
+			Description: User sets the speed\par
+			Outcome: The speed of the cruise control System is set to a specific speed\par
+			Basic Flow:
 		\begin{enumerate}
 			\item Given that the vehicle is on and the cruise control system is in the activated state, the system requests values from sensors.
 			\item Sensors provide values for approval to set cruise control system at current speed.
@@ -291,14 +301,33 @@ It should be mentioned that there are two similar sounding states that need to b
 			\item Speed (Throttle) position is continuously set to new values to ensure that the speed remains constant.
 			\item Speed is continuously reported to the cruise control system.
 		\end{enumerate}
-	\item Use Case 3: User adjusts speed
+	\item 	Use Case 3: \par
+			Primary Actor: User \par
+			Description: User increases speed\par
+			Outcome: The speed of the Cruise Control System is increased\par
+			Basic Flow:
 		\begin{enumerate}
-			\item If the cruise control system is in the set state, the user requests an adjustment of cruise control system speed.
+			\item If the cruise control system is in the set state, the user requests an increase of cruise control system speed.
 			\item Cruise control system provides visual feedback that the system will alter the speed of the vehicle.
-			\item Cruise control system slowly adjusts the speed of the vehicle to match that of the request.
+			\item Cruise control system slowly increases the speed of the vehicle to match that of the request.
 			\item When the desired speed is reached, the cruise control system will provide visual feedback that the adjustment has been completed.
 		\end{enumerate}
-	\item Use Case 4: User presses gas pedal while the cruise control system is set
+	\item 	Use Case 4: \par
+			Primary Actor: User \par
+			Description: User decreases speed\par
+			Outcome: The speed of the Cruise Control System is decreased\par
+			Basic Flow:
+		\begin{enumerate}
+			\item If the cruise control system is in the set state, the user requests a decrease of cruise control system speed.
+			\item Cruise control system provides visual feedback that the system will alter the speed of the vehicle.
+			\item Cruise control system slowly decreases the speed of the vehicle to match that of the request.
+			\item When the desired speed is reached, the cruise control system will provide visual feedback that the adjustment has been completed.
+		\end{enumerate}
+	\item 	Use Case 5: \par
+			Primary Actor: User \par
+			Description: User presses gas pedal while the cruise control system is set\par
+			Outcome: The speed of the vehicle increases while the gas remains pressed. When the gas is released, the speed will return to the speed of the Cruise Control System\par
+			Basic Flow:
 		\begin{enumerate}
 			\item If the cruise control system is in the set state, the user presses on the gas pedal.
 			\item In the event that the vehicle accelerates, the cruise control system will continually request the EMS to be set to the previously specified speed.
@@ -306,13 +335,33 @@ It should be mentioned that there are two similar sounding states that need to b
 			\item After the user releases the gas pedal and the vehicle stops accelerating, the cruise control system will request for the EMS to be set to the previous specified speed.
 			\item The vehicle will naturally decelerate nearing the old set speed, and once reached, the cruise control system will resume with the set speed.
 		\end{enumerate}
-	\item Use Case 5: User deactivates cruise control system
+	\item 	Use Case 6: \par
+			Primary Actor: User \par
+			Description: User applies brake while the cruise control system is set \par
+			Outcome: The speed of the vehicle decreases while the brake remains applied. When the brake is released, the speed will return to the speed of the Cruise Control System\par
+			Basic Flow:
+		\begin{enumerate}
+			\item If the cruise control system is in the set state, the user presses on the brake.
+			\item In the event that the vehicle decelerates, the cruise control system will continually request the EMS to be set to the previously specified speed.
+			\item Speed will be continuously reported to the cruise control system.
+			\item After the user releases the brake and the vehicle stops decelerating, the cruise control system will request for the EMS to be set to the previous specified speed.
+			\item The vehicle will naturally accelerate nearing the old set speed, and once reached, the cruise control system will resume with the set speed.
+		\end{enumerate}
+	\item 	Use Case 7:\par
+			Primary Actor: User \par
+			Description:  User deactivates cruise control system\par
+			Outcome: The Cruise Control System is now deactivated\par
+			Basic Flow:
 		\begin{enumerate}
 			\item If the cruise control system is activated, the user requests a deactivation of the cruise control system.
 			\item Cruise control system deactivates.
 			\item Cruise control system provides visual feedback that it has been deactivated.
 		\end{enumerate}
-	\item Use Case 6: Technician accesses logs of cruise control system
+	\item 	Use Case 8: \par
+			Primary Actor: Administrator\par
+			Description: Administrator accesses logs of cruise control system\par
+			Outcome: The administrator is given access to the log of the Cruise Control System\par
+			Basic Flow:
 		\begin{enumerate}
 			\item With the vehicle turned on and the cruise control activated, an administrator will have to use a proprietary physical hardware key in order to gain root access.
 			\item Once access has been granted, the administrator can download the logs to an external storage device through a USB port.
@@ -389,24 +438,28 @@ It should be mentioned that there are two similar sounding states that need to b
 			\caption{Sequence UML diagram for the cruise control system setting speed.}
 			\label{fig:ccSet}
 		\end{figure}
+		\newpage
 	\item See Figure ~\ref{fig:ccAdjust} for sequence diagram of cruise control system adjusting speed.
 		\begin{figure}[H]
 			\includegraphics[width=0.9\textwidth]{images/adjustSequence.png}
 			\caption{Sequence UML diagram for the cruise control system adjusting speed.}
 			\label{fig:ccAdjust}
 		\end{figure}
+		\newpage
 	\item See Figure ~\ref{fig:ccGas} for sequence diagram of the cruise control system being suspended when the user presses the gas pedal.
 		\begin{figure}[H]
 			\includegraphics[width=0.9\textwidth]{images/gasPedalPressedSequence.png}
 			\caption{Sequence UML diagram for the cruise control system suspending during gas pedal being pressed.}
 			\label{fig:ccGas}
 		\end{figure}
+		\newpage
 	\item See Figure ~\ref{fig:ccDeactivate} for sequence diagram of the cruise control system being deactivated.
 		\begin{figure}[H]
 			\includegraphics[width=0.9\textwidth]{images/deactivation.png}
 			\caption{Sequence UML diagram for the cruise control system being deactivated.}
 			\label{fig:ccDeactivate}
 		\end{figure}
+		\newpage
 	\item See Figure ~\ref{fig:ccAdmin} for sequence diagram of the administrator accessing the cruise control system logs.
 		\begin{figure}[H]
 			\includegraphics[width=0.9\textwidth]{images/sequenceAdmin.png}
@@ -415,6 +468,7 @@ It should be mentioned that there are two similar sounding states that need to b
 		\end{figure}
 \end{enumerate}
 
+\newpage
 \subsection{UML State Diagram}
 \begin{enumerate}
 	\item See Figure ~\ref{fig:stateUML} for the state diagram of the cruise control system.
@@ -425,30 +479,28 @@ It should be mentioned that there are two similar sounding states that need to b
 			\end{figure}
 \end{enumerate}
 
+\newpage
 \section{Software Architecture}
 
 \subsection{Architecture Style} 
-We will be implementing a combination of the object oriented architecture and the call and return architecture.
+We decided to implement our Cruise Control System by using Object Oriented Programming.
 \begin{enumerate} 
-	\item Call and Return 
-	\begin{enumerate} 
-		\item Pros: Easy to modify and scale. Grow system functionality by adding more modules. Simple to analyze and control flow.
-		\item Cons: Parallel processing may be difficult. Difficult to distribute across machines. Exceptions to normal operations are awkward to handle.
-		\item This makes sense with this project due to the many actions that can be performed by the cruise control system, for example acceleration, deceleration, and maintaining speed.
-		\item Different user actions should invoke different responses from the cruise control system. These responses are the result of activating different programs.
-		\item Specifically the type of call and return architecture we will be using is the main program/subprogram architecture.
-	\end{enumerate}
-	\item Object-oriented
-	\begin{enumerate} 
-		\item The components of a system encapsulate data and the operations that must be applied to manipulate the data. Communication and coordination between components are accomplished via message passing. 
-		\item Pros: It models the real world very well. With OOP, programs are easy to understand and maintain. OOP offers code reusability. Already created classes can be reused without having to write them again.OOP facilitates the quick development of programs where parallel development of classes is possible.With OOP, programs are easier to test, manage and debug.
-		\item Cons: With OOP, classes sometimes tend to be over-generalized. The relations among classes become superficial at times. The OOP design is tricky and requires appropriate knowledge. Also, one needs to do proper planning and design for OOP programming. To program with OOP, the programmer needs proper skills such as that of design, programming and thinking in terms of objects and classes etc.
-	\end{enumerate} 
+	\item We chose this architecture style because it will allow us to represent the different aspects of the cruise control system as different objects. For example, we will be able to represent the engine, the brake, the throttle, the sensors, and the log as different objects. These objects will have different attributes which will allow the program to closely resemble the real world. The brake object will contain a boolean that determines if the brake is being pressed or not. It will also have a function that will decrease the current speed of the vehicle. The sensors will have variables that determine if the current speed is less than, greater than, or equal to the desired cruising speed. The throttle will contain a boolean that determines if the user is trying to manually increase the speed of the vehicle. It will also have a function that will increase the speed of the car. The engine object will contain a boolean that determines if the vehicle is on or off. The log will be an array. Whenever any action is taken by the driver or the cruise control system, it will be added to the log as a tuple that contains a time stamp and the action that was taken. All of these objects will be used as components of a larger Cruise Control System object.
+	\item Using object-oriented design will limit the number of programming languages that we would be able to use. Using object-oriented programming can result in more resources being used because the programs can become very large. It is also difficult to determine all of the classes that will be necessary in order to properly implement the Cruise Control System at the beginning of the project.
+	\item We also considered implementing our Cruise Control System with call and return architecture. This architecture design would have allowed us to split the main program into subprograms. It would have been easier to build upon the program by adding more subprograms. It would have also been able to set a hierarchy for different programs if we used the main program/subprogram style of this architecture.
+	\item We opted not to use a call and return architecture because this architectural design often does not adequately support the data structures which would be important for the implementation of the Cruise Control System. Furthermore, due to a large number of subprograms, it may have become difficult to navigate and manage. 
+	\item We did not consider the following architectures:
+		\begin{enumerate} 
+			\item The components of a system encapsulate data and the operations that must be applied to manipulate the data. Communication and coordination between components are accomplished via message passing. 
+			\item Pros: It models the real world very well. With OOP, programs are easy to understand and maintain. OOP offers code re-usability. Already created classes can be reused without having to write them again.OOP facilitates the quick development of programs where parallel development of classes is possible.With OOP, programs are easier to test, manage and debug.
+			\item Cons: With OOP, classes sometimes tend to be over-generalized. The relations among classes become superficial at times. The OOP design is tricky and requires appropriate knowledge. Also, one needs to do proper planning and design for OOP programming. To program with OOP, the programmer needs proper skills such as that of design, programming and thinking in terms of objects and classes etc.
+		\end{enumerate} 
 \end{enumerate}
+
 \subsection{Components} 
 A software component is an architectural entity that encapsulates a subset of the system’s functionality and/or data. A set of components will perform a function that is required by a system. This restricts access to that subset via an explicitly defined interface. The components of a software system are the following (but not limited to):
 \begin{enumerate} 
-	\item Network and internet services
+	\item Network and Internet services
 	\item Hardware level of operating system
 	\item Logical level of operating system
 	\item Graphics engine
@@ -457,66 +509,53 @@ A software component is an architectural entity that encapsulates a subset of th
 	\item Command shell
 	\item System utilities 
 \end{enumerate} 
-A software connector is an architectural entity affecting and regulating the interactions. This is what interacts among other components and has the rules that govern those interactions. These interactions can be simple interactions such as procedure calls and shared variable access.  Some complex interactions are client-server protocols, database access protocols, and asynchronous event multicast. Each of these connectors provides interaction ducts and transfer of control and/or data. Connectors in software system implementations usually have no dedicated code and no identity. They typically do not correspond to compilation units and have a distributed implementation across multiple modules and across interaction mechanisms. \par
-
-Components and connectors are used to accomplish a system’s goal. This is expressed through an architectural configuration. More precisely, an architectural configuration is an association between components and connectors of software architecture. A connector is not equivalent to a component as components provide application-specific functionality while connectors provide application-independent interaction mechanisms. \par
-
-A software constraint defines how components can be integrated to form the system. A software constraint is a restriction on the degree of freedom you have in providing a solution. Constraints are effectively global requirements, such as limited development resources or a decision by senior management that restricts the way you develop a system. Constraints can be economic, political, technical, or environmental and pertain to your project resources, schedule, target environment, or to the system itself. Some constraints are the following:
-
-\begin{enumerate} 
-	\item The system will work on our existing technical infrastructure in which no new technologies will be introduced.
-	\item The system will only use the data contained in the existing corporate databse.
-	\item A programming language can also be a constrain because oftentimes, a specific programming language will be required for various reasons. 
-\end{enumerate}
+Regarding cruise control specifically, the main component of our cruise control is the engine management system. In order to do this, the cruise control will receive data from the sensor components in which it relays data from the components of the car (take for example, the brake and the sensors). \par
+Components and connectors are used to accomplish a system's goal. This is expressed through an architectural configuration. More precisely, an architectural configuration is an association between components and connectors of software architecture. A connector is not equivalent to a component as components provide application-specific functionality while connectors provide application-independent interaction mechanisms.\par
+Connectors are between the sensors to deliver the data to the cruise control module. This processes the data to determine the speed of the car. The connectors between the cruise control and the engine management system will continually deliver this data to each other.\par
+A software constraint defines how components can be integrated to form the system. A software constraint is a restriction on the degree of freedom you have in providing a solution. Constraints are effectively global requirements, such as limited development resources or a decision by senior management that restricts the way you develop a system.\par
+The information that is shared between the sensor components to the signal that the engine has been started must be delivered very quickly before cruise control can be turned on. The activation and deactivation of cruise control must be done in a specific time constraint. These are all constraints of the system.\par
 
 \subsection{Control Management} 
-Call-and-return uses a looping structure to control environment variables. It uses a pipe -filter system which creates an incremental transformation of streams. Pipe-filter can be used to structure systems that produce and process a stream of data. Each processing step is enclosed within a filter component and data to be processed is passed through pipes. These pipes can be used for buffering or for synchronization purposes. \par
-Call-and-return is split so that there is a main program that is divided into smaller pieces hierarchically. The main program invokes many program components in the hierarchy that program components are divided into subprograms. Hence, the main program is the driver of a call-and-return architecture. The main program or subprogram components are distributed within a network of multiple computers. The main aim is for an increase in performance. Call-and-return is used in object-oriented architectures which consists of bundling data and methods. For our purposes, the call-and-return main function would control incrementing the speed of a car or decrementing it and is responsible for the activation of cruise control. Call-and-return incurs a finite communication time between subroutine call and response. It strives to increase performance by distributing the computations and taking advantage of multiple processors. 
+	\begin{figure}[H]
+		\includegraphics[width=0.9\textwidth]{images/ControlManagementDiagram.png}
+		\caption{Control management diagram}
+		\label{fig:control_mgmt_diagram}
+	\end{figure}\par
+	We are going to have a main function that will have calls to the functions listed above as you can see: set_speed(), brake(), increment_speed(), decrement_speed(). These functions are essentially what are going to control our cruise control module. Brake will be a boolean as it is either true that the brake is being pressed or false if it is not being pressed. If cruise control is on and there is a set speed that is greater than 25 (which is the only way that cruise control can be activated in the first place), then if the brake function goes from false to true, then we shut off the cruise control entirely. \par 
+	This is similarly listed out in the diagram as shown. All of our functions interact with our main function which is essentially the driver of our cruise control program. 
+
 
 \subsection{Data Architecture} 
-In terms of data architecture, the plan is to adopt a scalable, object-oriented, NoSQL database like MongoDB. Considering that the project is going to be programmed in an object oriented language such as Java or C++, having the data schema represented in the same programming paradigm streamlines the technical thought process behind the project. Furthermore, MongoDB is known for its high availability and performance. Having a data schema known for reliability is imperative for a mission critical piece of software like cruise control.\par
-Due to the use of Java/C++ and MongoDB, the general paradigm of the data architecture is object-oriented. We will also be using a call and return architecture in conjunction, which will be discussed later on in the document.  An object-oriented data architecture means that the components of a system encapsulate data and the operations that must be applied to manipulate the data. Communication between the components is done via message passing. Due to the object-oriented nature of the system, that means that the data between components is communicated via synchronous message-passing. Message passing is a critical since it relies on all the components to be active in order to pass information. This makes it easier to identify when the system is down. This also means that data objects are passed around the system based on need. \par
-The mode of data transfer is direct memory access. Since data components exist in this cruise control (such as a data component for RPM sensors, one for brake sensors, one for engine sensors, one for system logs), each component can access each other if they need. So, if a system log needs to be generated, it can access RPM sensors, brake sensors and engine sensors data directly and then compile and create the log files. Thanks to this direct access model, functional components interact with data components directly as well. For example, the visual interface can simply query the RPM sensor object to obtain the information needed about speed. There are no proxies or extra steps needed, thus avoiding the chance of dependency issues. This is where the call-and-return architecture comes in. If a functional component needs to access something, a subprocess can run to access the needed data without deterring the general flow more mission-critical pieces of the software. \par 
-As we can see, the control of the program sets up the relationship between itself and the data on a need by need basis. Whenever the program needs something, it can directly access the data object to store, modify or delete values. 
-
+In terms of data architecture, the plan is to adopt a scalable, object-oriented, NoSQL database like MongoDB. Considering that the project is going to be programmed in an object-oriented language such as Java or C++, having the data schema represented in the same programming paradigm streamlines the technical thought process behind the project. Furthermore, MongoDB is known for its high availability and performance. Having a data schema known for reliability is imperative for a mission-critical piece of software like cruise control.\par
+Due to the use of Java/C++ and MongoDB, the general paradigm of the data architecture is object-oriented.  Communication between the components is done via passing information as parameters to functional components such as methods and classes. Cruise control software requires information to be readily available to make critical decisions. We would not use a data center oriented architecture because it would not be fast enough for a cruise control system. An architecture based on passing information as parameters allows us to continually pass around data within the system, making data access trivially fast and facilitates quick decisions and computations that can mitigate the risk of fatal injury or things spiraling out of control.\par
+To optimally implement this structure, we would need to define several functional components that each handles it’s own individual task and can be called as a function call to perform its individual task quickly. So, the cruise control system can have its own functional component for controlling the speed, controlling the brake, and sending visual and audio information to the user to inform about cruise control status such as whether it is on or off. The data components would always be available for use for functional components (such as program methods) in the cruise control software. This is because the functional components will need to repeatedly query the data components to accurately compute what speed is necessary, whether a brake is needed, and whether the user has requested for the system to turn on or off.\par
+ 
+\newpage
 \subsection{Architectural Designs} 
 \begin{enumerate}
-	\item See Figure ~\ref{fig:context} for the architecture context diagram.
+	\item See Figure ~\ref{fig:context} for the architecture context diagram in which the external entities that the software interacts with are defined. Some include other systems, devices, and actors.
 		\begin{figure}[H]
 			\includegraphics[width=0.9\textwidth]{images/Architectural_Context_Diagram.png}
 			\caption{context diagram}
 			\label{fig:context}
 		\end{figure}
-	\item Cruise control archetypes
-		\begin{enumerate}
-			\item System logging
-				\begin{figure}[H]
-					\includegraphics[width=0.9\textwidth]{images/classMapCS347_logging.png}
-					\caption{System logging}
-					\label{fig:logging}
-				\end{figure}
-			\item Set, maintain, and change speed
+		\newpage
+	\item See Figure ~\ref{fig:set} for the cruise control archetype. The archetype is an abstraction that represent an element of the cruise control system behavior.
 				\begin{figure}[H]
 					\includegraphics[width=0.9\textwidth]{images/classMapCS347_set.png}
-					\caption{Set, maintain, and change speed}
+					\caption{Cruise Control System Archetypes}
 					\label{fig:set}
 				\end{figure}
-			\item Visual output
-				\begin{figure}[H]
-					\includegraphics[width=0.9\textwidth]{images/classMapCS347_visual_output.png}
-					\caption{Visual output}
-					\label{fig:visual}
-				\end{figure}
-		\end{enumerate}
-	\item See Figure ~\ref{fig:top} for the cruise control Top-Level component
+				\newpage
+	\item See Figure ~\ref{fig:top} for the cruise control top-Level component in which the archetype is further defined for help with implementation.
 		\begin{figure}[H]
-			\includegraphics[width=0.9\textwidth]{images/architecture_top_level.png}
+			\includegraphics[width=0.9\textwidth]{images/Architecture_Top.png}
 			\caption{Top-level component}
 			\label{fig:top}
 		\end{figure}
-	\item See Figure ~\ref{fig:refined} for the refined component architecture
+	\item See Figure ~\ref{fig:refined} for the refined component architecture. This is a more refined version of the top-level component to help with implementation as well.
 		\begin{figure}[H]
-			\includegraphics[width=0.9\textwidth]{images/architecture_refined_component.png}
+			\includegraphics[width=\textwidth]{images/Refined_Components.png}
 			\caption{Refined component}
 			\label{fig:refined}
 		\end{figure}
@@ -524,10 +563,10 @@ As we can see, the control of the program sets up the relationship between itsel
 
 \subsection{Issues}
 \begin{enumerate} 
-	\item Hamzah: The data architecture has not been thoroughly defined. Work through the data architecture and define how exactly the cruise control software will store the data using MongoDB in an object-oriented + call and return architecture. 
-	\item Connie: work with Hamzah to identify how control interacts with the Data Architecture and the drawbacks of Object-Oriented design and call and return architectures.
-	\item Eric: Make security contingencies in case of data leak/ security issues.
-	\item Mike: Consider any architectural alternatives to the current design to ensure that the best implementation is chosen.
+	\item Hamzah: The data architecture has not been thoroughly defined. Work through the data architecture and define how exactly the cruise control software will store the data using MongoDB in an object-oriented + call and return architecture. \textbf{Resolved: 4/17/2020}
+	\item Connie: work with Hamzah to identify how control interacts with the Data Architecture and the drawbacks of Object-Oriented design and call and return architectures. \textbf{Resolved: 4/17/2020}
+	\item Eric: Make security contingencies in case of data leak/ security issues. \textbf{Resolved: 4/16/2020}
+	\item Mike: Consider any architectural alternatives to the current design to ensure that the best implementation is chosen. \textbf{Resolved: 4/18/2020}
 \end{enumerate}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 APR 2020 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 APR 2020 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,7 +773,11 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 23.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/underscore/underscore.sty
+Package: underscore 2006/09/13
+LaTeX Info: Redefining \_ on input line 42.
+)
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 24.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -798,20 +802,20 @@ LaTeX Warning: Label `sub@fig:sub3' multiply defined.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -843,7 +847,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 85.
+Package hyperref Info: Link coloring OFF on input line 86.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -853,9 +857,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
 
 (./document.out) (./document.out)
 \@outlinefile=\write4
@@ -864,13 +868,13 @@ LaTeX Info: Redefining \nameref on input line 85.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-Overfull \hbox (27.18243pt too wide) in paragraph at lines 88--89
+Overfull \hbox (27.18243pt too wide) in paragraph at lines 89--90
 \T1/ppl/b/it/36.135 Cruise Con-trol Soft-ware
  []
 
 
-Overfull \hbox (49.54996pt too wide) in paragraph at lines 88--89
-\T1/ppl/b/it/36.135 De-vel-op-ment Ver-sion 0.08 
+Overfull \hbox (49.54996pt too wide) in paragraph at lines 89--90
+\T1/ppl/b/it/36.135 De-vel-op-ment Ver-sion 0.09 
  []
 
 [1
@@ -884,165 +888,165 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \newpage
+l.115 \newpage
                [1] [2] [3] [4] [5] [6]
 <images/ccUseCaseUML.png, id=175, 533.995pt x 505.89pt>
 File: images/ccUseCaseUML.png Graphic file (type png)
 <use images/ccUseCaseUML.png>
-Package pdftex.def Info: images/ccUseCaseUML.png  used on input line 258.
+Package pdftex.def Info: images/ccUseCaseUML.png  used on input line 259.
 (pdftex.def)             Requested size: 323.9978pt x 306.95596pt.
  [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 265.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 266.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 265.
- [8 <./images/ccUseCaseUML.png>] [9] [10]
-<images/classUML.png, id=239, 804.00375pt x 1031.855pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 266.
+ [8 <./images/ccUseCaseUML.png>] [9] [10] [11]
+<images/classUML.png, id=244, 804.00375pt x 1031.855pt>
 File: images/classUML.png Graphic file (type png)
 <use images/classUML.png>
-Package pdftex.def Info: images/classUML.png  used on input line 327.
+Package pdftex.def Info: images/classUML.png  used on input line 376.
 (pdftex.def)             Requested size: 323.9978pt x 415.80493pt.
-<images/brakesensorindex.PNG, id=241, 182.93344pt x 164.48953pt>
+ [12]
+<images/brakesensorindex.PNG, id=262, 182.93344pt x 164.48953pt>
 File: images/brakesensorindex.PNG Graphic file (type png)
 <use images/brakesensorindex.PNG>
-Package pdftex.def Info: images/brakesensorindex.PNG  used on input line 339.
+Package pdftex.def Info: images/brakesensorindex.PNG  used on input line 388.
 (pdftex.def)             Requested size: 86.4012pt x 77.68907pt.
-<images/enginesensorindex.PNG, id=242, 185.94469pt x 166.37157pt>
+<images/enginesensorindex.PNG, id=263, 185.94469pt x 166.37157pt>
 File: images/enginesensorindex.PNG Graphic file (type png)
 <use images/enginesensorindex.PNG>
-Package pdftex.def Info: images/enginesensorindex.PNG  used on input line 344.
+Package pdftex.def Info: images/enginesensorindex.PNG  used on input line 393.
 (pdftex.def)             Requested size: 86.4012pt x 77.30865pt.
-<images/rpmsensorindex.PNG, id=243, 185.94469pt x 167.87718pt>
+<images/rpmsensorindex.PNG, id=264, 185.94469pt x 167.87718pt>
 File: images/rpmsensorindex.PNG Graphic file (type png)
 <use images/rpmsensorindex.PNG>
-Package pdftex.def Info: images/rpmsensorindex.PNG  used on input line 349.
+Package pdftex.def Info: images/rpmsensorindex.PNG  used on input line 398.
 (pdftex.def)             Requested size: 86.4012pt x 78.00829pt.
-<images/systemlogindex.PNG, id=244, 184.81548pt x 165.99516pt>
+<images/systemlogindex.PNG, id=265, 184.81548pt x 165.99516pt>
 File: images/systemlogindex.PNG Graphic file (type png)
 <use images/systemlogindex.PNG>
-Package pdftex.def Info: images/systemlogindex.PNG  used on input line 355.
+Package pdftex.def Info: images/systemlogindex.PNG  used on input line 404.
 (pdftex.def)             Requested size: 86.4012pt x 77.60234pt.
-<images/visualoutputindex.PNG, id=245, 186.6975pt x 169.75922pt>
+<images/visualoutputindex.PNG, id=266, 186.6975pt x 169.75922pt>
 File: images/visualoutputindex.PNG Graphic file (type png)
 <use images/visualoutputindex.PNG>
-Package pdftex.def Info: images/visualoutputindex.PNG  used on input line 360.
+Package pdftex.def Info: images/visualoutputindex.PNG  used on input line 409.
 (pdftex.def)             Requested size: 86.4012pt x 78.56161pt.
- [11 <./images/classUML.png>]
-<images/activityUML.jpg, id=255, 487.8225pt x 235.88126pt>
+ [13 <./images/classUML.png>]
+<images/activityUML.jpg, id=275, 487.8225pt x 235.88126pt>
 File: images/activityUML.jpg Graphic file (type jpg)
 <use images/activityUML.jpg>
-Package pdftex.def Info: images/activityUML.jpg  used on input line 372.
+Package pdftex.def Info: images/activityUML.jpg  used on input line 421.
 (pdftex.def)             Requested size: 323.9978pt x 156.6683pt.
-<images/activation.png, id=257, 663.47874pt x 169.63374pt>
+<images/activation.png, id=277, 663.47874pt x 169.63374pt>
 File: images/activation.png Graphic file (type png)
 <use images/activation.png>
-Package pdftex.def Info: images/activation.png  used on input line 382.
+Package pdftex.def Info: images/activation.png  used on input line 431.
 (pdftex.def)             Requested size: 323.9978pt x 82.83653pt.
- [12 <./images/brakesensorindex.PNG> <./images/enginesensorindex.PNG> <./images
+ [14 <./images/brakesensorindex.PNG> <./images/enginesensorindex.PNG> <./images
 /rpmsensorindex.PNG> <./images/systemlogindex.PNG> <./images/visualoutputindex.
 PNG> <./images/activityUML.jpg>]
-<images/set.png, id=273, 663.47874pt x 390.45876pt>
+<images/set.png, id=293, 663.47874pt x 390.45876pt>
 File: images/set.png Graphic file (type png)
 <use images/set.png>
-Package pdftex.def Info: images/set.png  used on input line 388.
+Package pdftex.def Info: images/set.png  used on input line 437.
 (pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
-<images/adjustSequence.png, id=275, 663.47874pt x 390.45876pt>
+ [15 <./images/activation.png> <./images/set.png>]
+<images/adjustSequence.png, id=305, 663.47874pt x 390.45876pt>
 File: images/adjustSequence.png Graphic file (type png)
 <use images/adjustSequence.png>
-Package pdftex.def Info: images/adjustSequence.png  used on input line 394.
+Package pdftex.def Info: images/adjustSequence.png  used on input line 444.
 (pdftex.def)             Requested size: 323.9978pt x 190.67108pt.
- [13 <./images/activation.png> <./images/set.png>]
-<images/gasPedalPressedSequence.png, id=290, 663.47874pt x 530.98375pt>
+ [16 <./images/adjustSequence.png>]
+<images/gasPedalPressedSequence.png, id=314, 663.47874pt x 530.98375pt>
 File: images/gasPedalPressedSequence.png Graphic file (type png)
 <use images/gasPedalPressedSequence.png>
 Package pdftex.def Info: images/gasPedalPressedSequence.png  used on input line
- 400.
+ 451.
 (pdftex.def)             Requested size: 323.9978pt x 259.29306pt.
- [14 <./images/adjustSequence.png>]
-<images/deactivation.png, id=299, 663.47874pt x 290.08376pt>
+ [17 <./images/gasPedalPressedSequence.png>]
+<images/deactivation.png, id=323, 663.47874pt x 290.08376pt>
 File: images/deactivation.png Graphic file (type png)
 <use images/deactivation.png>
-Package pdftex.def Info: images/deactivation.png  used on input line 406.
+Package pdftex.def Info: images/deactivation.png  used on input line 458.
 (pdftex.def)             Requested size: 323.9978pt x 141.65538pt.
-<images/sequenceAdmin.png, id=301, 382.42876pt x 490.83376pt>
+ [18 <./images/deactivation.png>]
+<images/sequenceAdmin.png, id=333, 382.42876pt x 490.83376pt>
 File: images/sequenceAdmin.png Graphic file (type png)
 <use images/sequenceAdmin.png>
-Package pdftex.def Info: images/sequenceAdmin.png  used on input line 412.
+Package pdftex.def Info: images/sequenceAdmin.png  used on input line 465.
 (pdftex.def)             Requested size: 323.9978pt x 415.86255pt.
- [15 <./images/gasPedalPressedSequence.png> <./images/deactivation.png>]
-<images/stateUML.png, id=311, 778.91pt x 335.2525pt>
+ [19 <./images/sequenceAdmin.png>]
+<images/stateUML.png, id=342, 778.91pt x 335.2525pt>
 File: images/stateUML.png Graphic file (type png)
 <use images/stateUML.png>
-Package pdftex.def Info: images/stateUML.png  used on input line 422.
+Package pdftex.def Info: images/stateUML.png  used on input line 476.
 (pdftex.def)             Requested size: 323.9978pt x 139.44946pt.
- [16 <./images/sequenceAdmin.png>] [17 <./images/stateUML.png>] [18]
-[19] [20]
-<images/Architectural_Context_Diagram.png, id=361, 565.11125pt x 305.14pt>
+ [20 <./images/stateUML.png>] [21] [22]
+<images/ControlManagementDiagram.png, id=372, 963.6pt x 722.7pt>
+File: images/ControlManagementDiagram.png Graphic file (type png)
+<use images/ControlManagementDiagram.png>
+Package pdftex.def Info: images/ControlManagementDiagram.png  used on input lin
+e 520.
+(pdftex.def)             Requested size: 323.9978pt x 242.99095pt.
+ [23] [24 <./images/ControlManagementDiagram.png>] [25]
+<images/Architectural_Context_Diagram.png, id=391, 566.115pt x 516.93124pt>
 File: images/Architectural_Context_Diagram.png Graphic file (type png)
 <use images/Architectural_Context_Diagram.png>
 Package pdftex.def Info: images/Architectural_Context_Diagram.png  used on inpu
-t line 486.
-(pdftex.def)             Requested size: 323.9978pt x 174.95126pt.
-<images/classMapCS347_logging.png, id=362, 432.61626pt x 630.355pt>
-File: images/classMapCS347_logging.png Graphic file (type png)
-<use images/classMapCS347_logging.png>
-Package pdftex.def Info: images/classMapCS347_logging.png  used on input line 4
-94.
-(pdftex.def)             Requested size: 323.9978pt x 472.11102pt.
- [21 <./images/Architectural_Context_Diagram.png>]
-<images/classMapCS347_set.png, id=372, 793.96625pt x 598.235pt>
+t line 538.
+(pdftex.def)             Requested size: 323.9978pt x 295.8528pt.
+ [26 <./images/Architectural_Context_Diagram.png>]
+<images/classMapCS347_set.png, id=400, 597.23125pt x 477.785pt>
 File: images/classMapCS347_set.png Graphic file (type png)
 <use images/classMapCS347_set.png>
-Package pdftex.def Info: images/classMapCS347_set.png  used on input line 500.
-(pdftex.def)             Requested size: 323.9978pt x 244.12776pt.
- [22 <./images/classMapCS347_logging.png>]
-<images/classMapCS347_visual_output.png, id=380, 290.08376pt x 462.72874pt>
-File: images/classMapCS347_visual_output.png Graphic file (type png)
-<use images/classMapCS347_visual_output.png>
-Package pdftex.def Info: images/classMapCS347_visual_output.png  used on input 
-line 506.
-(pdftex.def)             Requested size: 323.9978pt x 516.86171pt.
- [23 <./images/classMapCS347_set.png>]
-<images/architecture_top_level.png, id=389, 680.5425pt x 295.1025pt>
-File: images/architecture_top_level.png Graphic file (type png)
-<use images/architecture_top_level.png>
-Package pdftex.def Info: images/architecture_top_level.png  used on input line 
-513.
-(pdftex.def)             Requested size: 323.9978pt x 140.49484pt.
- [24 <./images/classMapCS347_visual_output.png>]
-<images/architecture_refined_component.png, id=398, 680.5425pt x 400.49625pt>
-File: images/architecture_refined_component.png Graphic file (type png)
-<use images/architecture_refined_component.png>
-Package pdftex.def Info: images/architecture_refined_component.png  used on inp
-ut line 519.
-(pdftex.def)             Requested size: 323.9978pt x 190.67157pt.
- [25 <./images/architecture_top_level.png> <./images/architecture_refined_compo
-nent.png>] [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
+Package pdftex.def Info: images/classMapCS347_set.png  used on input line 545.
+(pdftex.def)             Requested size: 323.9978pt x 259.20297pt.
+ [27 <./images/classMapCS347_set.png>]
+<images/Architecture_Top.png, id=410, 1244.65pt x 712.6625pt>
+File: images/Architecture_Top.png Graphic file (type png)
+<use images/Architecture_Top.png>
+Package pdftex.def Info: images/Architecture_Top.png  used on input line 552.
+(pdftex.def)             Requested size: 323.9978pt x 185.51624pt.
+<images/Refined_Components.png, id=412, 1450.41875pt x 693.59125pt>
+File: images/Refined_Components.png Graphic file (type png)
+<use images/Refined_Components.png>
+Package pdftex.def Info: images/Refined_Components.png  used on input line 558.
+
+(pdftex.def)             Requested size: 360.0pt x 172.14854pt.
+
+[28 <./images/Architecture_Top.png> <./images/Refined_Components.png>]
+Overfull \hbox (2.47394pt too wide) in paragraph at lines 569--570
+\OT1/cmr/m/n/10.95 en-sure that the best im-ple-men-ta-tion is cho-sen. \OT1/cm
+r/bx/n/10.95 Re-solved: 4/18/2020 
+ []
+
+[29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 701A17516C481B22556DE923BA86527D;1310.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
  ) 
 Here is how much of TeX's memory you used:
- 27373 strings out of 492616
- 525886 string characters out of 6129482
- 722121 words of memory out of 5000000
- 30786 multiletter control sequences out of 15000+600000
+ 27407 strings out of 492616
+ 526242 string characters out of 6129482
+ 721121 words of memory out of 5000000
+ 30812 multiletter control sequences out of 15000+600000
  539681 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,63p,1021b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,63p,1294b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
@@ -1053,10 +1057,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 19/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb>
-Output written on document.pdf (27 pages, 797358 bytes).
+Output written on document.pdf (30 pages, 769676 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
- 174 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
