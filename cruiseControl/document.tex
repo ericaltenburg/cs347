@@ -87,7 +87,7 @@
 \begin{titlepage}
 
 \noindent
-\titlefont Cruise Control Software Development Version 0.09\par
+\titlefont Cruise Control Software Development Version 0.10\par
 \epigraph{We pledge our honor that we have abided by the Stevens Honor System.}%
 {\textit{CS347: Software Development Processes |  Spring 2020}\\ \textsc{Team Mike}}
 \null\vfill
@@ -165,7 +165,7 @@ also serve as a time where the team as a collective can try to think of solution
 around those obstacles. We also plan on giving real-time updates about any
 progress made through Slack in order to ensure all members of the team are
 equipped with the most recent developments of the project. We also intend on
-using Java or C++ to implement our cruise control system. We believe that the
+using Java to implement our cruise control system. We believe that the
 high-performance Java provides and the fact that its part of the Object-Oriented
 Programming (OOP) paradigm makes it perfect for embedded systems. \par
 There are a plethora of features that make up cruise control. As most cruise
@@ -485,7 +485,7 @@ It should be mentioned that there are two similar sounding states that need to b
 \subsection{Architecture Style} 
 We decided to implement our Cruise Control System by using Object Oriented Programming.
 \begin{enumerate} 
-	\item We chose this architecture style because it will allow us to represent the different aspects of the cruise control system as different objects. For example, we will be able to represent the engine, the brake, the throttle, the sensors, and the log as different objects. These objects will have different attributes which will allow the program to closely resemble the real world. The brake object will contain a boolean that determines if the brake is being pressed or not. It will also have a function that will decrease the current speed of the vehicle. The sensors will have variables that determine if the current speed is less than, greater than, or equal to the desired cruising speed. The throttle will contain a boolean that determines if the user is trying to manually increase the speed of the vehicle. It will also have a function that will increase the speed of the car. The engine object will contain a boolean that determines if the vehicle is on or off. The log will be an array. Whenever any action is taken by the driver or the cruise control system, it will be added to the log as a tuple that contains a time stamp and the action that was taken. All of these objects will be used as components of a larger Cruise Control System object.
+	\item We chose this architecture style because it will allow us to represent the different aspects of the cruise control system as different objects. For example, we will be able to represent the engine, the brake, the throttle, the sensors, and the log as different objects. These objects will have different attributes which will allow the program to closely resemble the real world. The brake object will contain a boolean that determines if the brake is being pressed or not. It will also have a function that will decrease the current speed of the vehicle. The sensors will have variables that determine if the current speed is less than, greater than, or equal to the desired cruising speed. The throttle will contain a boolean that determines if the user is trying to manually increase the speed of the vehicle. It will also have a function that will increase the speed of the car. The engine object will contain a boolean that determines if the vehicle is on or off. The log will be a tuple of a time stamp and a string. Whenever any action is taken by the driver or the cruise control system, it will be added to the log. All of these objects will be used as components of a larger Cruise Control System object.
 	\item Using object-oriented design will limit the number of programming languages that we would be able to use. Using object-oriented programming can result in more resources being used because the programs can become very large. It is also difficult to determine all of the classes that will be necessary in order to properly implement the Cruise Control System at the beginning of the project.
 	\item We also considered implementing our Cruise Control System with call and return architecture. This architecture design would have allowed us to split the main program into subprograms. It would have been easier to build upon the program by adding more subprograms. It would have also been able to set a hierarchy for different programs if we used the main program/subprogram style of this architecture.
 	\item We opted not to use a call and return architecture because this architectural design often does not adequately support the data structures which would be important for the implementation of the Cruise Control System. Furthermore, due to a large number of subprograms, it may have become difficult to navigate and manage. 
@@ -517,17 +517,17 @@ The information that is shared between the sensor components to the signal that 
 
 \subsection{Control Management} 
 	\begin{figure}[H]
-		\includegraphics[width=0.9\textwidth]{images/ControlManagementDiagram.png}
+		\includegraphics[width=0.9\textwidth]{images/Control_Management_Diagram.jpg}
 		\caption{Control management diagram}
 		\label{fig:control_mgmt_diagram}
 	\end{figure}\par
-	We are going to have a main function that will have calls to the functions listed above as you can see: set_speed(), brake(), increment_speed(), decrement_speed(). These functions are essentially what are going to control our cruise control module. Brake will be a boolean as it is either true that the brake is being pressed or false if it is not being pressed. If cruise control is on and there is a set speed that is greater than 25 (which is the only way that cruise control can be activated in the first place), then if the brake function goes from false to true, then we shut off the cruise control entirely. \par 
+	We are going to have a main function that will have calls to the functions listed above as you can see: write_to_log(), Is_Cruise_Control_On(), Set_speed(), get_speed(), Brake(), increment_speed(), and decrement_speed(). These functions are essentially what are going to control our cruise control module. Brake will be a boolean as it is either true that the brake is being pressed or false if it is not being pressed. If cruise control is on and there is a set speed that is greater than 25 (which is the only way that cruise control can be activated in the first place), then if the brake function goes from false to true, then we shut off the cruise control entirely. \par 
 	This is similarly listed out in the diagram as shown. All of our functions interact with our main function which is essentially the driver of our cruise control program. 
 
 
 \subsection{Data Architecture} 
-In terms of data architecture, the plan is to adopt a scalable, object-oriented, NoSQL database like MongoDB. Considering that the project is going to be programmed in an object-oriented language such as Java or C++, having the data schema represented in the same programming paradigm streamlines the technical thought process behind the project. Furthermore, MongoDB is known for its high availability and performance. Having a data schema known for reliability is imperative for a mission-critical piece of software like cruise control.\par
-Due to the use of Java/C++ and MongoDB, the general paradigm of the data architecture is object-oriented.  Communication between the components is done via passing information as parameters to functional components such as methods and classes. Cruise control software requires information to be readily available to make critical decisions. We would not use a data center oriented architecture because it would not be fast enough for a cruise control system. An architecture based on passing information as parameters allows us to continually pass around data within the system, making data access trivially fast and facilitates quick decisions and computations that can mitigate the risk of fatal injury or things spiraling out of control.\par
+In terms of data architecture, considering that the project is going to be programmed in an object-oriented language such as Java, having the data schema represented in the same programming paradigm streamlines the technical thought process behind the project. Having a data schema known for reliability is imperative for a mission-critical piece of software like cruise control.\par
+Due to the use of Java, the general paradigm of the data architecture is object-oriented.  Communication between the components is done via passing information as parameters to functional components such as methods and classes. Cruise control software requires information to be readily available to make critical decisions. An architecture based on passing information as parameters allows us to continually pass around data within the system, making data access trivially fast and facilitates quick decisions and computations that can mitigate the risk of fatal injury or things spiraling out of control.\par
 To optimally implement this structure, we would need to define several functional components that each handles its own individual task and can be called as a function call to perform its individual task quickly. So, the cruise control system can have its own functional component for controlling the speed, controlling the brake, and sending visual and audio information to the user to inform about cruise control status such as whether it is on or off. The data components would always be available for use for functional components (such as program methods) in the cruise control software. This is because the functional components will need to repeatedly query the data components to accurately compute what speed is necessary, whether a brake is needed, and whether the user has requested for the system to turn on or off.\par
  
 \newpage
@@ -567,6 +567,26 @@ To optimally implement this structure, we would need to define several functiona
 	\item Connie: work with Hamzah to identify how control interacts with the Data Architecture and the drawbacks of Object-Oriented design and call and return architectures. Review section 5.3.\textbf{Resolved: 4/17/2020}
 	\item Eric: Make security contingencies in case of data leak/ security issues. There needs to be a consideration of the ramifications that using a database like MongoDB can have security wise due to the fact that it is cloud based. Perhaps creating our own local database that behaves similarly to a black box would be the most secure option. Review section 5.4.\textbf{Resolved: 4/16/2020}
 	\item Mike: Consider any architectural alternatives to the current design to ensure that the best implementation is chosen. Review section 5.5.\textbf{Resolved: 4/18/2020}
+	\item Mike: In section 5.1, what does it mean where it says “the log will be an array”?\par
+			As each command for cruise control comes in, we will append it to a file as opposed to maintaining an array. This is not to say the log will not be treated like an object as each message will be a tuple of a time stamp and a string which will be appended to the log file. \textbf{Resolved: 5/4/2020}
+	\item Mike: Do we want to keep in section 5.2 the general definition of components in software?\par
+			Yes, we do want to keep it as it helps guide understanding of how we will be using components. \textbf{Resolved: 5/4/2020}
+	\item Connie: In section 5.3, we should add a write_to_log() function.\par
+			We added another function to our Control Management Diagram in Section 5.3 that would write each command to the log. \textbf{Resolved: 5/4/2020}
+	\item Connie: In section 5.3, we should add some accessor functions in our control management diagram.\par
+			We added more functions to our Control Management Diagram in Section 5.3 that act as accessor methods. For example, we added: getSpeed(), and isCruiseControlOn() that return the current state of the vehicle. \textbf{Resolved: 5/4/2020}
+	\item Eric: In section 5.4, did we specify the specific programming language we will be using?\par
+			We were deciding between implementing the Cruise Control System in Java or C++. We ultimately decided to use Java because the group as a whole feels more comfortable programming in this language. \textbf{Resolved: 5/4/2020}
+	\item Eric: In section 5.4, why are we using a database for local cruise control?\par
+			Removal of the database as it will not be scalable so there is no reason to keep it. More so, since this is a local prototype and there is not a reason to connect the database. In order to store information, we have other means for it. It also leaves room for hackers to tamper with the software. \textbf{Resolved: 5/4/2020}
+	\item Hamzah: In section 5.4, there is a grammatical error in the first sentence of the last paragraph.\par
+			This grammatical error was corrected. \textbf{Resolved: 5/4/2020}
+	\item Hamzah: In section 5.6, we need to specify where the issues were in section 5.\par
+			The issues that were resolved in section 5.6 were updated to include the section where the issue was found. \textbf{Resolved: 5/4/2020}
+	\item Eric: The formatting of the charts in section 4.5 is off.\par
+			The diagrams in section 4.5 were reformatted to correct mistakes that were made when uploading the diagram to the document. This will make comprehension of the diagrams much easier. \textbf{Resolved: 5/4/2020}
+	\item Connie: There is a spelling error in section 4.1.\par
+			This spelling error was corrected. \textbf{Resolved: 5/4/2020}
 \end{enumerate}
 
 \end{document}
