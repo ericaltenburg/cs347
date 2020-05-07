@@ -6,6 +6,10 @@ public void log_in(){
     //TO DO
 }
 
+public void access_log(){
+    //TO DO
+}
+
 public float get_speed(){
     //TO DO
 }
@@ -36,6 +40,7 @@ public static void main(){
     boolean brake;
     float cruise_speed;
     boolean throttle; 
+
     //turns on cruise control
     //some shitty UI
     //we need to create some sort of UI
