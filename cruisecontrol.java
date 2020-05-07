@@ -14,6 +14,10 @@ public boolean is_cruise_control_on(){
     //TO DO
 }
 
+public void activate_cruise_control(){
+    //TO DO
+}
+
 public float decrement_speed(){
     //TO DO
 }
@@ -28,6 +32,11 @@ public boolean is_brake_pressed(){
 }
 
 public static void main(){
+    float current_speed;
+    boolean brake;
+    float cruise_speed;
+    boolean throttle; 
+    //turns on cruise control
     //some shitty UI
     //we need to create some sort of UI
     //JAVA swing
