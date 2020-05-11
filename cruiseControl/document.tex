@@ -636,9 +636,180 @@ To optimally implement this structure, we would need to define several functiona
 			This spelling error was corrected. \textbf{Resolved: 5/4/2020}
 \end{enumerate}
 
+\newpage
 \section{Project Code}
 \lstinputlisting{code/CruiseControl.java}
+	
+\newpage
+\section{Tests}
 
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+		\item Description: User attempts to activate the Cruise Control System while the Cruise Control System is currently inactive.
+		\item Expected Result: The Cruise Control System activates and provides visual feedback of activation.
+		\item The user’s car is already on and cruise control is not activated. The user is going above 25 miles per hour and the user attempts to push the “activate cruise control” button. Since the user is going at least 25 miles per hour, cruise control is now on and the user is free to set a cruise control speed if they would like. 
+		\item The user’s car is already on and cruise control is not activated. The user is going below 25 miles per hour and the user attempts to push the “activate cruise control” button. Since the user is going below 25 miles per hour, cruise control is activated and the user now has an activated cruise control system. 
+		\item The user’s car is not on and cruise control is not activated since the car is off. The user attempts to press the “activate cruise control” button and when the user does that, since the car is off, cruise control is not activated. 
+		\item The user’s car is already on and cruise control is not activated. The user is going above 100 miles per hour and the user attempts to push the “activate cruise control” button, the cruise control system activates. 
+		\end{enumerate}
+	\item 
+		\begin{enumerate}
+		\item Description: User attempts to activate the Cruise Control System while the Cruise Control System is already activated.
+		\item Expected Result: The Cruise Control System provides visual feedback that Cruise Control System is already activated. State of the Cruise Control System should not change.
+		\item The user’s car is already on and cruise control is already activated. The user is going above 25 miles per hour and the user attempts to push the “activate cruise control” button. When the user presses the “activate cruise control” button, nothing happens, and cruise control remains activated. The user has a joyous ride and nothing is broken.
+		\item The user’s car is already on and cruise control is already activated. The user is going below 25 miles per hour and the user attempts to push the “activate cruise control” button. When the user presses the “activate cruise control” button, nothing happens, and cruise control remains activated. The user has a joyous ride and nothing is broken.
+		\item The user’s car is already on and cruise control is already activated. The user is going above 100 miles per hour and the user attempts to push the “activate cruise control” button. When the user does this, cruise control remains activated and nothing happens.
+		\end{enumerate}
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to set the Cruise Control Speed while the Cruise Control System is currently inactive.
+	\item Expected Result: The Cruise Control System provides feedback that the Cruise Control System needs to be activated before setting the cruise control speed
+	\item Cruise control is not activated and the car is turned on and the user is going at least 25 miles per hour but below 100 miles per hour. The user attempts to set the cruise control speed. When the user tries this, nothing happens and the user has no set cruise control speed because cruise control was not activated in the first place. 
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to set the Cruise Control Speed while the Cruise Control System is currently active and current speed is less than 25.
+	\item Expected Result: The Cruise Control System provides feedback that the current speed needs to be at least 25 miles per hour before setting the cruise control speed.
+	\item Cruise control is not activated and the car is turned on and the user is going below 25 miles per hour. The user attempts to set the cruise control speed, but is unable to because the cruise control system is not activated.
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to set the Cruise Control Speed while the Cruise Control System is currently active and current speed is greater than 100 miles per hour.
+	\item Expected Result: The Cruise Control System provides feedback that current speed needs to be less than 100 miles per hour in order to set the cruise control speed
+	\item Cruise control is not activated and the car is turned on and the user is going at least 100 miles per hour. The user attempts to set the cruise control speed, but is unable to because the cruise control system is not activated. 
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to set the Cruise Control Speed while the Cruise Control System is currently active and current speed is greater than 25.
+	\item Expected Result: The cruise control speed is set to the current speed and the Cruise Control System provides visual feedback that cruise control speed is now set to the current speed
+	\item The user’s car is on and the user is going at a speed that is greater than 25 miles per hour. The cruise control system is activated and the user attempts to set a cruise control speed. The user is successful and they set the cruise control speed and are able to increment and decrement the speed from a range of 25 miles per hour to 100 miles per hour. 
+	\item The user’s car is on and the user is going at a speed that is greater than 100 miles per hour. The cruise control system is activated and the user attempts to set a cruise control speed. The user is unsuccessful because the user is going at least 100 miles per hour. They are not able to set a cruise control speed and continue to manually set the speed. 
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to increment the Cruise Control Speed while the Cruise Control Speed is not set
+	\item Expected Result: The Cruise Control System provides feedback that cruise control speed must be set before cruise control speed can be incremented
+	\item The user’s car is on and the cruise control system is activated. There is no set cruise control speed and the user is going greater than 25 miles per hour. The user then attempts to increment the cruise control speed but because there is no set cruise control speed, nothing happens. 
+	\item The user’s car is on and the cruise control system is not activated. There is no set cruise control speed and the user is going greater than 25 miles per hour. The user then attempts to increment the cruise control speed but because there is no set cruise control speed and the system is not activated, they cannot increment the speed.
+	\item The user’s car is on and cruise control is activated. The user is going greater than 100 miles per hour and the user attempts to increment the cruise control speed. Since there is no set cruise control speed, the user cannot increment the cruise control speed. Nothing happens. 
+	\item The user’s car is on and the cruise control system is not activated. There is no set cruise control speed and the user is going greater than 100 miles per hour. The user attempts to increment the cruise control speed but because there is no set cruise control speed, the user cannot increment the speed.  
+\end{enumerate}
+	
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to increment the Cruise Control Speed while the Cruise Control Speed is currently 100 miles per hour
+	\item Expected Result: The Cruise Control System provides feedback that cruise control speed may not exceed 100 miles per hour
+	\item The user’s car is on and the cruise control system is activated. The user successfully sets their cruise control speed to 100 miles per hour. The user is going 100 miles per hour and the user then attempts to increment the cruise control speed. They are not able to increment their cruise control speed so it remains at 100 miles per hour. 
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to increment the Cruise Control Speed while the Cruise Control Speed is less than 100 miles per hour and cruise control speed is different from current speed
+	\item Expected Result: The Cruise Control Speed is increased by one and the Cruise Control System provides visual feedback that the cruise control speed has been incremented by one
+	\item The user’s car is on and the cruise control system is activated. The user is going at least 25 miles per hour (but is not going over 100 miles per hour). The user sets cruise control speed and successfully does it and then the user attempts to increase the speed by 1. The user is successful and the car’s cruise control speed is incremented. The current speed of the car remains unchanged.
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User attempts to increment the Cruise Control Speed while the Cruise Control Speed is less than 100 miles per hour and cruise control speed is the same as current speed
+	\item Expected Result: The Cruise Control Speed is increased by one and the Cruise Control System provides visual feedback that the cruise control speed has been incremented by one
+	\item The user’s car is on and the cruise control system is activated. The user is going at least 25 miles per hour (but is not going over 100 miles per hour). The user sets cruise control speed and successfully does it and then the user attempts to increase the speed by 1. The user is successful and the car’s cruise control speed is incremented. The current speed of the car is also incremented by 1.
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to decrement the Cruise Control Speed while the Cruise Control Speed is not set
+	\item Expected Result: The Cruise Control System provides feedback that cruise control speed must be set before cruise control speed can be decremented
+	\item The user’s car is on and the user is going over 100 miles per hour. The cruise control system is activated but there is no set cruise control speed. The user attempts to decrement the cruise control speed but nothing happens because the cruise control speed is not set. The user continues to go at their current speed. 
+	\item The user’s car is on and the user is going at least 25 miles per hour. The cruise control system is activated, but there is no set cruise control speed. The user attempts to decrement the cruise control speed but nothing occurs because the cruise control speed is not set. The user continues on without decrementing their cruise control speed. 
+	\item The user’s car is on and the user is going below 25 miles per hour. The cruise control system is activated, but there is no set cruise control speed. The user presses the decrement speed button but because there is no set cruise control speed, nothing
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to decrement the Cruise Control Speed while the Cruise Control Speed is currently 25 miles per hour
+	\item Expected Result: The Cruise Control System provides feedback that cruise control speed may not go below 25 miles per hour
+	\item The user’s car is on and the user is going 25 miles per hour. The cruise control system is activated and the current cruise control speed is set to 25 miles per hour. The user attempts to press the decrement speed button and the user continues to go at a cruise control speed of 25 miles per hour. The user cannot decrement the speed any lower. 
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User attempts to decrement the Cruise Control Speed while the Cruise Control Speed is greater than 25 miles per hour and cruise control speed is different from current speed.
+	\item Expected Result: The Cruise Control Speed is decreased by one and the Cruise Control System provides visual feedback that the cruise control speed has been decremented. Current speed should remain unchanged.
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 55 miles per hour. The user attempts to decrement the cruise control speed. The cruise control speed is decreased by 1 and the current speed remains unchanged.
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User attempts to decrement the Cruise Control Speed while the Cruise Control Speed is greater than 25 miles per hour cruise control speed is the same as current speed.
+	\item Expected Result: The Cruise Control Speed is decreased by one and the Cruise Control System provides visual feedback that the cruise control speed has been decremented
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 45 miles per hour. The user attempts to decrement the cruise control speed. The cruise control speed is decreased by 1 and the current speed also decreases by one.
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User increases speed of the car
+	\item Expected Result: The Cruise Control Speed remains the same while the current speed of the car increases to the user’s desired speed
+	\item The user’s car is on and the user is going 25 miles per hour. The cruise control system is activated and the current cruise control speed is set to 25 miles per hour. The user increases the current speed of the car to 35 miles per hour. The cruise control speed remains at 25 miles per hour. 
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User decreases speed of the car
+	\item Expected Result: The Cruise Control Speed remains the same while the current speed of the car decreases to the user’s desired speed
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 45 miles per hour. The user decreases the current speed of the car to 35 miles per hour. The cruise control speed remains at 45 miles per hour.
+\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+	\item Description: User stops the car using the brakes
+	\item Expected Result: The Cruise Control speed is changed to zero and unset. The current speed of the car is set to 0. The cruise control system remains activated.
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 45 miles per hour. The user uses the brakes to stop the car. The current speed of the car becomes 0 miles per hour. The cruise control speed is unset and the cruise control system remains activated. 
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User attempts to unset cruise control speed while cruise control speed is currently unset
+	\item Expected Result: Cruise Control System should provide visual feedback that the cruise control speed is currently unset
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated but the current cruise control speed is not set. The user attempts to unset the cruise control speed. The cruise control system provides visual feedback that the speed is already unset.
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User attempts to unset cruise control speed while cruise control speed is currently set
+	\item Expected Result: The cruise control speed is unset and the Cruise Control System should provide visual feedback that the cruise control speed is now unset
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 45 miles per hour. The user attempts to unset the cruise control speed. The cruise control speed is unset and the cruise control system provides visual feedback that the cruise control speed has been unset.
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User deactivates cruise control system when cruise control is activated
+	\item Expected Result: Cruise Control System unsets the cruise control speed if it is set and deactivates the cruise control system. The Cruise control System provides visual feedback of deactivation. Current speed of the car is not change
+	\item The user’s car is on and the user is going 45 miles per hour. The cruise control system is activated and the current cruise control speed is set to 45 miles per hour. The user attempts to deactivate the cruise control system. The cruise control speed is unset and the cruise control system deactivates.Visual feedback that the cruise control system has been deactivated is provided.
+\end{enumerate}
+
+	\item
+		\begin{enumerate}
+	\item Description: User attempts to access the log with the wrong password
+	\item Expected Result: The Cruise Control System provides visual feedback that the password is incorrect
+	\item The user inputs a password that is incorrect to try to access the Cruise Control Log. The Cruise Control System provides feedback that that the password is incorrect and the Cruise Control Log is not opened
+\end{enumerate}
+
+	\item
+\begin{enumerate}
+	\item Description: User attempts to access the log with the correct password
+	\item Expected Result: The cruise control System displays the log
+	\item The user inputs a password that is correct to try to access the Cruise Control Log. The Cruise Control System opens the Cruise Control Log. The log should contain all of the actions performed by the Cruise Control System.
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
 \section{Issues}
 \begin{enumerate} 
 	\item Issue determining which Java GUI framework to use. \textbf{Resolved on 05/07/2020. Decided to use Java Swing due to it's implementation relying on pure Java FX, which allows for greater portability. Furthermore, Java Swing has a greater support network that would enable faster remediations.}
