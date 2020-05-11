@@ -24,7 +24,7 @@ import javax.swing.*;
 public class CruiseControl {
 
 	/**
-     * 
+     *	Engine object holding the current speed 
      */
     public class Engine {
     	// Data fields of engine
