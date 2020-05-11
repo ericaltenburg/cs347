@@ -589,5 +589,22 @@ To optimally implement this structure, we would need to define several functiona
 			This spelling error was corrected. \textbf{Resolved: 5/4/2020}
 \end{enumerate}
 
+\section{Issues}
+\begin{enumerate} 
+	\item Issue 1: Issue determining which Java GUI framework to use. \textbf{Resolved on 05/07/2020. Decided to use Java Swing due to it's implementation relying on pure Java FX, which allows for greater portability. Furthermore, Java Swing has a greater support network that would enable faster remediations.}
+	\item Issue 2: Objects would not properly update in the GUI. \textbf{Resolved on 05/08/2020. Was an issue about how the objects were not declared in scope.}
+	\item Issue 3: Brake did not stop cruise control. \textbf{Resolved on 05/09/2020. Ensured that brake unsets cruise control yet keeps it activated so that the user can go back to enabling the cruise control by resetting the speed.}
+	\item Issue 4: Increment Cruise Control button incorrectly updated the engine speed instead of cruise control speed. \textbf{Resolved on 05/09/2020. Fixed the increment cruise control button to update the cruise control speed and not the engine speed.}
+	\item Issue 5: Able to set a cruise control speed before activation. \textbf{Resolved on 05/09/2020. Ensured that set cruise control can only be used as long as the cruise control system is activated by using a boolean flag.}
+	\item Issue 6: Log is not properly updated with all cruise control information. \textbf{Resolved on 05/10/2020. Ensured that after each cruise control activity the log is written with a BufferedWriter.}
+	\item Issue 7: Log has too much information by including all the activities that the car is doing. \textbf{Resolved on 05/10/2020. Remediated the issue by only allowing the log to be written when cruise control is activated.}
+	\item Issue 8: When accessing the admin logs in the GUI, if there is too much information in the window you cannot scroll down to view all of it. Need to implement scrolling functionality into the admin JFrame. \textbf{Resolved on 05/11/2020. Implemented a correct JScrollPane.} 
+	\item Issue 9: When exiting out of the admin pane, the entire system shuts down. \textbf{Resolved on 05/11/2020. Deleted the call to System.exit when deleting out of admin pane and replaced it with a simple call to delete the frame and continue running cruise control.}
+	\item Issue 10: Visual notifcations for the program does not include changes in cruise control activation and deactivation. \textbf{Resolved on 05/11/2020. Extended the notifications to handle cruise control activation and deactivation.}
+	\item Issue 11: Scheduling conflicts due to Final Exam Week made team meetings less frequent then desired. \textbf{Resolved on 05/11/2020. Adopted a model where the group would meet for an hour every few days to discuss things to fix. Each individual member would then take a task and then fix it. On 05/11/2020, the group was able to devote several hours into refining the entire document and presentation.}
+
+
+
+\end{enumerate}
 \end{document}
 
