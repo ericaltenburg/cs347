@@ -24,7 +24,7 @@ import javax.swing.*;
 public class CruiseControl {
 
 	/**
-     *	Engine object holding the current speed 
+     *	Engine object that holds the current speed 
      */
     public class Engine {
     	// Data fields of engine
@@ -350,19 +350,24 @@ public class CruiseControl {
         		try {
         			// Check to see if the cc is activated and subsequently sets correctly
                     if(j.is_cruise_control_activated()){ 
-                    	boolean temp = j.set_speed(cc_log);
-                    	if (temp) {
-                    		// Change the colors of the buttons to reflect that cc is set
-                    		setCCSpeed.setForeground(Color.GREEN);
-	                        unsetCCSpeed.setForeground(Color.RED);
-	                        module.add(setCCSpeed);
-	                        module.add(unsetCCSpeed);
-
-	                        // Update the cc speed notif and push notification
-	                        notifications.setText("Cruise control speed set.");
-	                        ccSpeedNotif.setText(j.get_cruise_speed() + " mph");
+                    	// Check to see if the cruise control is already set
+                    	if (j.is_cruise_control_set()) {
+                    		notifications.setText("CC speed is already set.");
                     	} else {
-                    		notifications.setText("CC Speed failed to set.");
+                    		boolean temp = j.set_speed(cc_log);
+	                    	if (temp) {
+	                    		// Change the colors of the buttons to reflect that cc is set
+	                    		setCCSpeed.setForeground(Color.GREEN);
+		                        unsetCCSpeed.setForeground(Color.RED);
+		                        module.add(setCCSpeed);
+		                        module.add(unsetCCSpeed);
+
+		                        // Update the cc speed notif and push notification
+		                        notifications.setText("Cruise control speed set.");
+		                        ccSpeedNotif.setText(j.get_cruise_speed() + " mph");
+	                    	} else {
+	                    		notifications.setText("CC Speed failed to set.");
+	                    	}
                     	}
                     } else { 
                         notifications.setText("Activate cruise control to set speed.");
@@ -440,14 +445,18 @@ public class CruiseControl {
                     char[] pass = {'R', 'e', 'z', 'a', '3', '4', '7'};
 
                     // Compare to see if passwords match
-                    if(Arrays.equals(text_, pass)){ 
+                    if(Arrays.equals(text_, pass)){
+                    	// Update the log for the admin accessing
+                        j.write_to_log(cc_log, "ADMIN ACCESSED.");
+
+                    	// Flush the stream to push everything to the log so admin can
+                    	// see most up-to-date info
+                    	cc_log.flush();
+
                     	// Create new frame, panel, and scrollpane for log
                         JFrame admin = new JFrame("Admin: Logs"); 
                         JPanel panel = new JPanel();
                         JScrollPane scrollInfo=new JScrollPane(panel,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS); 
-
-                        // Update the log for the admin accessing
-                        j.write_to_log(cc_log, "ADMIN ACCESSED.");
 
                         // Delete admin frame upon closing window
                         admin.addWindowListener(new java.awt.event.WindowAdapter() {
@@ -617,8 +626,10 @@ public class CruiseControl {
         	}
         });
 
-        // Event when the brake is pressed. Upon being pressed, it should set speed vals to 0
-        // and unset cc speed but not deactivate.
+        // Event when the brake is pressed. Upon being pressed, it should decrement engine speed,
+        // set cc speed to 0, and unset cc speed but not deactivate it. Note: Brake should not 
+        // exclusively be used for unsetting the cc as if that was the case, then there would
+        // be no difference between unset/deactivate cc.
         brake.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent e){ 
                 try {  
@@ -630,8 +641,8 @@ public class CruiseControl {
                         module.add(setCCSpeed);
                         module.add(unsetCCSpeed);
 
-                        // Set engine speed to 0, push to log, set brake to true, and unset cc
-                        j.cc_engine.set_current_speed(0);
+                        // Decrement engine speed by 1, push to log, set brake to true, and unset cc
+                        j.cc_engine.set_current_speed(j.cc_engine.get_current_speed()-1);
                         String log_text = "Brake activated. CC Speed set to 0. Car speed set to " + j.cc_engine.get_current_speed() + " mph";
                         j.cc_brake.set_brake(true, cc_log, log_text);
                         j.unset_speed(cc_log);
@@ -641,8 +652,8 @@ public class CruiseControl {
                         speedNotif.setText(j.cc_engine.get_current_speed() + " mph");
                         ccSpeedNotif.setText(j.get_cruise_speed() + " mph");
                     } else { 
-                    	// If not set, just change engine speed to 0, add log text, and set brake to true.
-                    	j.cc_engine.set_current_speed(0);
+                    	// If not set, just decrement engine speed by 1, add log text, and set brake to true.
+                    	j.cc_engine.set_current_speed(j.cc_engine.get_current_speed()-1);
                         String log_text = "Brake activated. CC Speed set to 0. Car speed set to " + j.cc_engine.get_current_speed() + " mph";
                         j.cc_brake.set_brake(true, cc_log, log_text);
 
